@@ -1,7 +1,5 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Spyro.Editor;
 using Unity.Cinemachine;
 
 namespace lota.gameplay.player
@@ -11,15 +9,14 @@ namespace lota.gameplay.player
     {
         [Recursive]
         public PlayerSettings settings;
-        public InputActionAsset input;
+        [Header("Input")]
+        public InputActionReference move;
+        public InputActionReference jump;
+        public InputActionReference primaryInteract;
+        public InputActionReference secondaryInteract;
+        public InputActionReference crouch;
+        public InputActionReference sprint;
 
-        private InputAction
-            moveAction,
-            jumpAction,
-            primaryInteractAction,
-            secondaryInteractAction,
-            crouchAction,
-            sprintAction;
 
         private EntityController entityController;
         private float movementModifier = 1.0f;
@@ -33,7 +30,6 @@ namespace lota.gameplay.player
 
             InitializeEntityController();
             SetupCinemachineBrain();
-            FetchActions();
             BindActions();
 
             //DEBUG
@@ -51,28 +47,40 @@ namespace lota.gameplay.player
         private void InitializeEntityController()
         {
             entityController = GetComponent<EntityController>();
-            entityController.Gravity = settings.gravity;
+            entityController.GravitySettings = new EntityController.GravityData
+            {
+                gravity = settings.gravity,
+                fallModifier = settings.fallMultiplier,
+                lowJumpModifier = settings.lowFallMultiplier
+            };
             transform.up = -settings.gravityDirection;
+            entityController.Acceleration = settings.acceleration;
+            entityController.Decceleration = settings.decceleration;
         }
 
-        private void FetchActions()
+        private void SetActionStates(bool newState)
         {
-            moveAction = input.FindAction("Move", true);
-            jumpAction = input.FindAction("Jump", true);
-            primaryInteractAction = input.FindAction("Primary_Attack", true);
-            secondaryInteractAction = input.FindAction("Secondary_Attack", true);
-            crouchAction = input.FindAction("Crouch", true);
-            sprintAction = input.FindAction("Sprint", true);
+            if (newState)
+            {
+                move.action.Enable();
+                jump.action.Enable();
+                primaryInteract.action.Enable();
+                secondaryInteract.action.Enable();
+                crouch.action.Enable();
+                sprint.action.Enable();
+                return;
+            }
+            move.action.Disable();
+            jump.action.Disable();
+            primaryInteract.action.Disable();
+            secondaryInteract.action.Disable();
+            crouch.action.Disable();
+            sprint.action.Disable();
         }
 
         private void BindActions()
         {
-            jumpAction.performed += OnJump;
-            sprintAction.performed += OnSprint;
-        }
-        private void OnJump(InputAction.CallbackContext context)
-        {
-            entityController.Jump(settings.jumpHeight);
+            sprint.action.performed += OnSprint;
         }
 
         private void OnSprint(InputAction.CallbackContext context)
@@ -82,6 +90,7 @@ namespace lota.gameplay.player
 
         private void Update()
         {
+            TryJumpingEntity();
             MoveEntity();
 
             //DEBUG
@@ -91,9 +100,17 @@ namespace lota.gameplay.player
             }
         }
 
+        private void TryJumpingEntity()
+        {
+            if (jump.action.ReadValue<float>() > 0)
+            {
+                entityController.Jump(settings.jumpHeight);
+            }
+        }
+
         private void MoveEntity()
         {
-            var input = moveAction.ReadValue<Vector2>();
+            var input = move.action.ReadValue<Vector2>();
             var direction = mainCamera.transform.right * input.x + mainCamera.transform.forward * input.y;
             direction.y = 0;
             entityController.Move(direction, settings.movementSpeed * movementModifier);
@@ -101,12 +118,12 @@ namespace lota.gameplay.player
 
         private void OnEnable()
         {
-            input.Enable();
+            SetActionStates(true);
         }
 
         private void OnDisable()
         {
-            input.Disable();
+            SetActionStates(false);
         }
 
 
