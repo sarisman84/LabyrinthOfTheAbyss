@@ -1,0 +1,23 @@
+{
+    "name": "lota.gameplay.player",
+    "rootNamespace": "lota.gameplay",
+    "references": [
+        "GUID:5aa4c7427425ff44daad1ac9e5bdd1e6",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:3ae5734e49d646442ad24f37762ebdd2",
+        "GUID:dc04f38471c3a459fb4d31124ee9127d",
+        "GUID:3951fc27a45ad694ca398f9db00b4fbb",
+        "GUID:bd31c24b0b741614291454c018cf7b3c",
+        "GUID:5eb4e7806736a1747975e2da3f22423c",
+        "GUID:4307f53044263cf4b835bd812fc161a4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
