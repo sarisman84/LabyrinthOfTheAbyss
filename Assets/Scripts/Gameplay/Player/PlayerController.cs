@@ -1,12 +1,22 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.Cinemachine;
+using UnityEngine.InputSystem.Users;
+using System;
+using UnityEngine.InputSystem.LowLevel;
+using System.Linq;
 
 namespace lota.gameplay.player
 {
     [RequireComponent(typeof(EntityController))]
-    public class PlayerInput : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
+        enum UserInputType
+        {
+            Keyboard,
+            Gamepad
+        }
+
         [Recursive]
         public PlayerSettings settings;
         [Header("Input")]
@@ -23,6 +33,9 @@ namespace lota.gameplay.player
         private Vector3 spawnPosition;
         private Camera mainCamera;
         private CinemachineBrain mainCameraBrain;
+        private InputDevice inputDevice;
+
+
 
         void Awake()
         {
@@ -30,12 +43,32 @@ namespace lota.gameplay.player
 
             InitializeEntityController();
             SetupCinemachineBrain();
-            BindActions();
 
+            InputSystem.onEvent += OnInputSystemEvent;
             //DEBUG
             spawnPosition = transform.position;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+
+
+        }
+        void OnInputSystemEvent(InputEventPtr eventPtr, InputDevice device)
+        {
+            if (inputDevice == device)
+            {
+                return;
+            }
+
+            var eventType = eventPtr.type;
+            if (eventType == StateEvent.Type)
+            {
+                if (!eventPtr.EnumerateChangedControls(device, 0.0001f).Any())
+                {
+                    return;
+                }
+            }
+
+            inputDevice = device;
         }
 
         private void SetupCinemachineBrain()
@@ -78,14 +111,9 @@ namespace lota.gameplay.player
             sprint.action.Disable();
         }
 
-        private void BindActions()
-        {
-            sprint.action.performed += OnSprint;
-        }
-
         private void OnSprint(InputAction.CallbackContext context)
         {
-            movementModifier = context.ReadValue<float>() > 0 ? settings.sprintModifier : 1.0f;
+
         }
 
         private void Update()
@@ -110,10 +138,17 @@ namespace lota.gameplay.player
 
         private void MoveEntity()
         {
-            var input = move.action.ReadValue<Vector2>();
-            var direction = mainCamera.transform.right * input.x + mainCamera.transform.forward * input.y;
-            direction.y = 0;
-            entityController.Move(direction, settings.movementSpeed * movementModifier);
+            movementModifier = sprint.action.ReadValue<float>() > 0 ? settings.sprintModifier : 1.0f;
+
+            var input = move.action.ReadValue<Vector2>() * (inputDevice is Gamepad ? 10.0f : 1.0f);
+
+            entityController.RootMove(input, movementModifier);
+
+            var lookDirection = mainCamera.transform.forward;
+            lookDirection.y = 0.0f;
+            entityController.RotateTowards(lookDirection, settings.rotationSpeed);
+
+
         }
 
         private void OnEnable()
@@ -129,7 +164,11 @@ namespace lota.gameplay.player
 
         private void OnDrawGizmos()
         {
-            settings.RenderGizmos(new Vector3(transform.position.x, spawnPosition.y, transform.position.z));
+            if (!settings)
+            {
+                return;
+            }
+            settings.RenderGizmos(new Vector3(transform.position.x, spawnPosition.y, transform.position.z), transform.up.normalized);
         }
     }
 }

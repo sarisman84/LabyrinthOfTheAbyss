@@ -1,5 +1,7 @@
 using System;
+using NUnit.Framework;
 using UnityEditor;
+using UnityEditor.Animations;
 using UnityEngine;
 
 namespace lota.gameplay
@@ -18,15 +20,19 @@ namespace lota.gameplay
         public float Acceleration { private get; set; }
         public float Decceleration { private get; set; }
 
+
         private CharacterController controller;
+        private Animator animator;
         private Vector3 verticalRelativeVelocity;
         private Vector3 horizontalRelativeVelocity;
         private bool currentFrameJumpFlag;
+        private float movementMultiplier;
 
 
         void Awake()
         {
             controller = GetComponent<CharacterController>();
+            animator = GetComponentInChildren<Animator>();
         }
         public void Jump(float jumpHeight)
         {
@@ -45,13 +51,36 @@ namespace lota.gameplay
 
         public void Move(Vector3 direction, float speed)
         {
-            horizontalRelativeVelocity = Vector3.Lerp(horizontalRelativeVelocity, Vector3.zero, Decceleration * Time.deltaTime);
+            controller.Move(UpdateVelocity(ref horizontalRelativeVelocity, direction, speed) * Time.deltaTime);
+        }
+
+        public void RootMove(Vector3 input, float speedRatio = 1.0f)
+        {
+            const float DampTime = 0.05f;
+            animator.SetFloat("xInput", input.x, DampTime, Time.deltaTime);
+            animator.SetFloat("yInput", input.y, DampTime, Time.deltaTime);
+
+            movementMultiplier = speedRatio;
+        }
+
+        public void RotateTowards(Vector3 lookDirection, float rotationSpeed = 100.0f)
+        {
+            if (lookDirection.magnitude > 0.0f)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(lookDirection, transform.up.normalized);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            }
+        }
+
+        private Vector3 UpdateVelocity(ref Vector3 currentVelocity, Vector3 direction, float speed = 1.0f)
+        {
+            currentVelocity = Vector3.Lerp(currentVelocity, Vector3.zero, Decceleration * Time.deltaTime);
             if (direction.magnitude > 0)
             {
                 var localVelocity = direction * speed;
-                horizontalRelativeVelocity = Vector3.Lerp(horizontalRelativeVelocity, localVelocity, Acceleration * Time.deltaTime);
+                currentVelocity = Vector3.Lerp(currentVelocity, localVelocity, Acceleration * Time.deltaTime);
             }
-            controller.Move(horizontalRelativeVelocity * Time.deltaTime);
+            return currentVelocity;
         }
 
         private void Update()
@@ -99,6 +128,17 @@ namespace lota.gameplay
             Gizmos.DrawRay(transform.position, verticalRelativeVelocity);
             Gizmos.color = Color.blue;
             Gizmos.DrawRay(transform.position, horizontalRelativeVelocity);
+        }
+
+
+        private void OnAnimatorMove()
+        {
+            if (!animator)
+            {
+                return;
+            }
+
+            controller.Move(animator.deltaPosition * movementMultiplier);
         }
     }
 }

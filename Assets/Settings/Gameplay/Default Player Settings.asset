@@ -16,6 +16,7 @@ MonoBehaviour:
   sprintModifier: 2
   acceleration: 0.95
   decceleration: 0.95
+  rotationSpeed: 50
   jumpHeight: 5
   gravity: 9.8
   fallMultiplier: 2.5
