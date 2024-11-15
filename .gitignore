@@ -79,4 +79,6 @@ crashlytics-build.properties
 # Log files can be ignored.
 fmod_editor.log
 
-Documentation/.obsidian/
+Documentation/.obsidian/workspace.json
+Documentation/.obsidian/hotkeys.json
+Documentation/.obsidian/appearance.json
