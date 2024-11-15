@@ -69,6 +69,7 @@ In Made in Abyss, the main cast is tasked with descending down a massive hole fu
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdbh5V0V52XCT8E43oc42kvBWcdkLmg2Iup1vwotYgtEhN2rAz7PXRJOOECxas4S3eQrCQCF6YkP0MKO7FbmvGtIzrjjCImL7IkKAE5SPdEaHTrFQmPNFLkpSbOpOBHQ59SPEGD22fIYNZxnReU7Dl4POHH?key=dKADDy9Gafs3WRnYBZ6-_A)
 
+---
 ### Player Experience
 The player starts by selecting a character of their choice from a collection of characters, each with their own strengths, weaknesses and playstyles. They are then able to explore a hub world where they can upgrade each of these characters from resources gained from their exploration attempts in the labyrinth by interacting with NPCs scattered throughout the hub world. The player can also start an exploration attempt, where they are tasked with finding their way to the lower floor. As they are exploring, they find resources that they can use to further better themselves throughout the current and future runs. They also find a variety of obstacles of different difficulties that halt the player’s progression from further exploration. 
 
@@ -82,8 +83,6 @@ The game is developed to be released on Windows PC
 - Studio One to compose SFX and Music
 - Blender (models & animations pipeline)
 	- Explore texturing methods, i.e. Substance Painter, 3D Coat Textura, or Blender specific texturing add-ons
-    
-
 ### Genre
 Roguelike, Souls-like, Singleplayer, Extraction
 
@@ -91,17 +90,14 @@ Roguelike, Souls-like, Singleplayer, Extraction
 
 Given the depth of the combat, exploration and progression, this game’s core market leans towards the hardcore players that are able to invest their time to learn, explore and conquer the game, with the hopes that more casual players would find this game’s experience enticing.
 
+---
 ## Lore
 
 ### Factions
 
 There are 4 factions that represent the various NPCs and enemies in which the player will encounter:
 
-  
-
 [TODO: get logan to flesh out the factions (name and all)
-
-  
 
 |                                                                                                                                                                                                    |                                                                                                                                                                                                                           |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -114,6 +110,7 @@ There are 4 factions that represent the various NPCs and enemies in which the pl
 
 [Note for logan: there are no gods in the world of the game. However, there are substances such as holy or void energies that exist. The factions that use these substances worship religions that reflect these substances, much like how we worship Crisitanity or Hindu]
 
+---
 ## Concept
 
 ### Basic Mechanics
@@ -238,6 +235,7 @@ Between each floor, there are intermediate floors where the floor never shifts, 
 
 At the last floor, the player always encounters a boss  that they have to defeat. In doing so, they are rewarded with loot and their exploration attempt ends.
 
+---
 ## Game Experience
 
 ### UI
@@ -273,3 +271,5 @@ UI will be stylized to match the game’s overall theme. It will be simplistic e
 - Lock on:
 	- Keyboard: Q
 	- Gamepad: L3 (Press Left Stick)
+
+---
