@@ -1,12 +1,10 @@
 ---
-
-kanban-plugin: list
-
+kanban-plugin: board
 ---
 
 ## Backboard
 
-- [ ] # This is a test ⏫ 
+- [ ] # This is a test ⏫
 	
 	Try to test this card a bit more using this scrumboard
 	
