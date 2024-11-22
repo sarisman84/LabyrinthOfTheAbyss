@@ -5,6 +5,10 @@ using UnityEngine.InputSystem.Users;
 using System;
 using UnityEngine.InputSystem.LowLevel;
 using System.Linq;
+using Spyro;
+using lota.systemic;
+using lota.utility;
+using lota.generated.input;
 
 namespace lota.gameplay.player
 {
@@ -22,8 +26,8 @@ namespace lota.gameplay.player
         [Header("Input")]
         public InputActionReference move;
         public InputActionReference jump;
-        public InputActionReference primaryInteract;
-        public InputActionReference secondaryInteract;
+        public InputActionReference primaryItemUse;
+        public InputActionReference secondaryItemUse;
         public InputActionReference crouch;
         public InputActionReference sprint;
 
@@ -33,18 +37,20 @@ namespace lota.gameplay.player
         private Vector3 spawnPosition;
         private Camera mainCamera;
         private CinemachineBrain mainCameraBrain;
-        private InputDevice inputDevice;
+        private InputService inputService;
 
 
+        public Camera MainCamera => mainCamera;
 
         void Awake()
         {
+            inputService = ServiceLocator<InputService>.Service;
             mainCamera = Camera.main;
 
             InitializeEntityController();
             SetupCinemachineBrain();
 
-            InputSystem.onEvent += OnInputSystemEvent;
+
             //DEBUG
             spawnPosition = transform.position;
             Cursor.lockState = CursorLockMode.Locked;
@@ -52,24 +58,7 @@ namespace lota.gameplay.player
 
 
         }
-        void OnInputSystemEvent(InputEventPtr eventPtr, InputDevice device)
-        {
-            if (inputDevice == device)
-            {
-                return;
-            }
 
-            var eventType = eventPtr.type;
-            if (eventType == StateEvent.Type)
-            {
-                if (!eventPtr.EnumerateChangedControls(device, 0.0001f).Any())
-                {
-                    return;
-                }
-            }
-
-            inputDevice = device;
-        }
 
         private void SetupCinemachineBrain()
         {
@@ -91,30 +80,6 @@ namespace lota.gameplay.player
             entityController.Decceleration = settings.decceleration;
         }
 
-        private void SetActionStates(bool newState)
-        {
-            if (newState)
-            {
-                move.action.Enable();
-                jump.action.Enable();
-                primaryInteract.action.Enable();
-                secondaryInteract.action.Enable();
-                crouch.action.Enable();
-                sprint.action.Enable();
-                return;
-            }
-            move.action.Disable();
-            jump.action.Disable();
-            primaryInteract.action.Disable();
-            secondaryInteract.action.Disable();
-            crouch.action.Disable();
-            sprint.action.Disable();
-        }
-
-        private void OnSprint(InputAction.CallbackContext context)
-        {
-
-        }
 
         private void Update()
         {
@@ -130,7 +95,7 @@ namespace lota.gameplay.player
 
         private void TryJumpingEntity()
         {
-            if (jump.action.ReadValue<float>() > 0)
+            if (inputService.IsActionPressed(InputActionID.Player_Jump))
             {
                 entityController.Jump(settings.jumpHeight);
             }
@@ -138,9 +103,9 @@ namespace lota.gameplay.player
 
         private void MoveEntity()
         {
-            movementModifier = sprint.action.ReadValue<float>() > 0 ? settings.sprintModifier : 1.0f;
+            movementModifier = inputService.IsActionPressed(InputActionID.Player_Sprint) ? settings.sprintModifier : 1.0f;
 
-            var input = move.action.ReadValue<Vector2>() * (inputDevice is Gamepad ? 10.0f : 1.0f);
+            var input = inputService.GetActionAxis(InputActionID.Player_Move).ToVector3XZ();
 
             entityController.RootMove(input, movementModifier);
 
@@ -149,16 +114,6 @@ namespace lota.gameplay.player
             entityController.RotateTowards(lookDirection, settings.rotationSpeed);
 
 
-        }
-
-        private void OnEnable()
-        {
-            SetActionStates(true);
-        }
-
-        private void OnDisable()
-        {
-            SetActionStates(false);
         }
 
 
@@ -170,6 +125,8 @@ namespace lota.gameplay.player
             }
             settings.RenderGizmos(new Vector3(transform.position.x, spawnPosition.y, transform.position.z), transform.up.normalized);
         }
+
+
     }
 }
 

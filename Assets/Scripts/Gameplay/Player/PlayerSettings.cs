@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Specialized;
 using UnityEngine;
 
@@ -19,6 +20,10 @@ namespace lota.gameplay.player
 		[Range(1.0f, 5.0f)] public float fallMultiplier;
 		[Range(1.0f, 5.0f)] public float lowFallMultiplier;
 		public Vector3 gravityDirection = Vector3.down;
+		[Header("Interaction Settings")]
+		public float interactionDetectionRadius = 1.0f;
+		public float interactionDetectionLength = 5.0f;
+		public LayerMask interactionDetectionLayerMask;
 
 
 		public void RenderGizmos(Vector3 origin, Vector3 upDirection)
