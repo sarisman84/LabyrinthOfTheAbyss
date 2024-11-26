@@ -40,25 +40,4 @@ Once you have done the above, click *Clone the repo!* If done correctly, you sho
 
 ![[Pasted image 20241125222119.png]]
 
-## Learning the basics
-
-Whenever you change, create, move or delete a file, GitKraken detects said changes and displays them on the right side of the program:
-
-![[Pasted image 20241125224519.png]]
-
-From here, you can  **stage**  any file changes that you made. That is to say, you decide which changes you want to keep and which to discard. Once that is decided, you write a commit summary and description of the changes you made and then press the *Stage Changes to Commit*.
-
-![[Pasted image 20241125224821.png]]
-
-In the bar seen above the main history tree, you should be seeing the following:
-
-![[Pasted image 20241125224247.png]]
-
-The main buttons to learn are:
-
-**Pull**:
-	 Downloads all the available files from the internet in a given branch
-
-**Push**:
-	 Pushes all of the content that you have committed thus far
-
+I strongly suggest that you watch this [tutorial on how to use the UI of the program](https://www.youtube.com/watch?v=LBlijN29gb8&list=PLe6EXFvnTV78WqGmGSq8JPnafR3lAa55n) in the case that you do not know how version control works.
