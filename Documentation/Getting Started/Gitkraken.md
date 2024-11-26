@@ -35,7 +35,6 @@ In said modal window, choose *Github.com*, it should change the main contents of
 >  
 > Once you are done, exit the above menu and retry the above steps. 
  
-
 Once you have done the above, click *Clone the repo!* If done correctly, you should be seeing something similar to the below example, with a little progress window showing the download progress:
 
 ![[Pasted image 20241125222119.png]]
