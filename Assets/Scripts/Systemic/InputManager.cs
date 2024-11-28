@@ -20,7 +20,7 @@ namespace lota.systemic
 	{
 		private const string GeneratedContentPath = "Assets/Generated";
 		private const string KeybindEnumPath = "/InputKeybindEnum.cs";
-		private static InputActionAsset KeybindAsset { get; } = Resources.LoadAll<InputActionAsset>("")[0];
+		private static InputActionAsset KeybindAsset { get; } = Resources.Load<InputActionAsset>("Controls");
 		private Dictionary<int, InputAction> keybindDatabase;
 		private Dictionary<int, InputActionMap> mapDatabase;
 		private int currentMap = 0;
@@ -93,8 +93,15 @@ namespace lota.systemic
 
 		public bool IsActionPressed(InputActionID actionID)
 		{
-			var action = keybindDatabase[(int)actionID];
-			return action.ReadValue<float>() > 0;
+			var key = (int)actionID;
+			var result = keybindDatabase[key].ReadValue<float>() > 0;
+
+			if (result)
+			{
+				Debug.Log(keybindDatabase[key].name);
+			}
+
+			return result;
 		}
 
 		public Vector2 GetActionAxis(InputActionID actionID)

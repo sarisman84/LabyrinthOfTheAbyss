@@ -1,34 +1,20 @@
 using System;
+using System.Collections.Generic;
 using Spyro;
 using UnityEngine;
 
 namespace lota.systemic
 {
-	public class Root
+	public class Root : MonoBehaviour
 	{
-		private static Root _appRoot;
-		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-		private static void OnAppInit()
-		{
-			_appRoot = new Root();
-		}
+		public List<SceneRef> scenesToLoad;
 
-		Root()
+		void Awake()
 		{
-			const string rootDataPath = "App/RootData";
-			RootData data = Resources.Load<RootData>(rootDataPath);
-			if (!data)
-			{
-				throw new NullReferenceException($"Could not find RootData at path: {rootDataPath}");
-			}
-			foreach (var scene in data.scenesToLoad)
+			foreach(var scene in scenesToLoad)
 			{
 				scene.Load(true);
 			}
-
-			//ServiceLocator<InputService>.Service.Init(data.globalInput);
-			//ServiceLocator<InputService>.Service.EnableInputMap("Player");
-
 		}
 	}
 }
