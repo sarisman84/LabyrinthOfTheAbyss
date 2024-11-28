@@ -94,6 +94,19 @@ namespace lota.systemic
 		public bool IsActionPressed(InputActionID actionID)
 		{
 			var key = (int)actionID;
+			var result = keybindDatabase[key].ReadValue<float>() > 0 && keybindDatabase[key].triggered;
+
+			if (result)
+			{
+				Debug.Log(keybindDatabase[key].name);
+			}
+
+			return result;
+		}
+		
+		public bool IsActionHeld(InputActionID actionID)
+		{
+			var key = (int)actionID;
 			var result = keybindDatabase[key].ReadValue<float>() > 0;
 
 			if (result)

@@ -11,62 +11,68 @@ namespace lota.gameplay
 	public class PlayerController : MonoBehaviour
 	{
 		public float jumpHeightInMeters;
+		public float groundDetectionWidth = 0.1f;
+		public Vector3 groundDetectionPositionOffset;
+		public Vector3 groundDetectionSizeOffset;
+		public LayerMask groundDetectionMask;
+
 		public float movementSpeed;
 		public float sprintSpeed;
 
-		public float JumpVelocity => Mathf.Sqrt(2 * Physics.gravity.magnitude * jumpHeightInMeters);
+		private float JumpVelocity => Mathf.Sqrt(2 * Physics.gravity.magnitude * jumpHeightInMeters);
+		private Vector3 GroundDetectorPosition => (collider.bounds.center) - Vector3.up * (collider.bounds.extents.y + (groundDetectionWidth / 2.0f)) + groundDetectionPositionOffset;
+		private Vector3 GroundDetectorSize => new Vector3(collider.bounds.size.x, groundDetectionWidth, collider.bounds.size.z) + groundDetectionSizeOffset;
 
-		private Vector3 velocity;
+
+		private bool jumpInput;
+		private Vector3 directionalInput;
+
+
+		private float lastKnownYPositionBeforeJump;
 		private bool isGrounded;
+		private Collider[] groundCheckAlloc;
 
 		private Rigidbody body;
 		private InputService inputService;
+		private Collider collider;
 		private Camera mainCamera;
 		private void Awake()
 		{
+			groundCheckAlloc = new Collider[10];
+
 			body = GetComponent<Rigidbody>();
-			body.isKinematic = true;
+			collider = GetComponent<Collider>();
+
+			body.freezeRotation = true;
 
 			inputService = ServiceLocator<InputService>.Service;
 			mainCamera = Camera.main;
 		}
-
 		private void Update()
+		{
+			directionalInput = LocalizedInputToCameraLook(inputService.GetActionAxis(InputActionID.Player_Move).ToVector3XZ());
+			jumpInput = inputService.IsActionHeld(InputActionID.Player_Jump);
+		}
+		private void FixedUpdate()
 		{
 			HandleMovement();
 			HandleJump();
-			HandleGravity();
-
-
-			body.MovePosition(body.position + velocity);
+			HandleGroundCheck();
 		}
 
 		private void HandleMovement()
 		{
-			velocity = LocalizedInputToCameraLook(inputService.GetActionAxis(InputActionID.Player_Move).ToVector3XZ());
+			body.linearVelocity += directionalInput * movementSpeed;
 		}
 
 		private void HandleJump()
 		{
-			if (isGrounded && inputService.IsActionPressed(InputActionID.Player_Jump))
+			if (isGrounded && jumpInput && body.linearVelocity.y < 0.5f)
 			{
-				velocity.y = JumpVelocity;
+				lastKnownYPositionBeforeJump = body.position.y;
+				var targetLinearVelocity = -Physics.gravity.normalized * JumpVelocity;
+				body.linearVelocity += targetLinearVelocity;
 				isGrounded = false;
-			}
-		}
-
-		private void HandleGravity()
-		{
-			if (!isGrounded)
-			{
-				// Apply gravity to vertical velocity
-				velocity.y += Physics.gravity.y * Time.deltaTime;
-			}
-
-			// Prevent infinite downward velocity
-			if (isGrounded && velocity.y < 0)
-			{
-				velocity.y = 0f;
 			}
 		}
 
@@ -77,18 +83,38 @@ namespace lota.gameplay
 			return result.normalized;
 		}
 
-		private void OnCollisionEnter(Collision collision)
+		private void HandleGroundCheck()
 		{
-			// Basic grounded check
-			if (collision.contacts[0].normal.y > 0.5f)
+			var result = Physics.OverlapBoxNonAlloc(GroundDetectorPosition, GroundDetectorSize, groundCheckAlloc, transform.rotation, groundDetectionMask);
+			isGrounded = result > 0;
+
+			for (int i = 0; i < result; ++i)
 			{
-				isGrounded = true;
+				Debug.Log(groundCheckAlloc[i].name);
 			}
 		}
 
-		private void OnCollisionExit(Collision collision)
+		private void OnDrawGizmos()
 		{
-			isGrounded = false;
+			if (!collider)
+			{
+				collider = GetComponent<Collider>();
+			}
+
+			Gizmos.color = isGrounded ? Color.green : Color.red;
+			Gizmos.DrawCube(GroundDetectorPosition, GroundDetectorSize);
+			Gizmos.DrawSphere(GroundDetectorPosition, 0.15f);
+
+			Gizmos.color = Color.magenta;
+			Gizmos.DrawWireCube(collider.bounds.center, collider.bounds.size);
+
+			Gizmos.color = Color.cyan;
+			var aPos = transform.position;
+			var bPos = new Vector3(transform.position.x, lastKnownYPositionBeforeJump, transform.position.z) + Vector3.up * jumpHeightInMeters;
+			Gizmos.DrawSphere(aPos, 0.05f);
+			Gizmos.DrawSphere(bPos, 0.05f);
+			Gizmos.DrawLine(aPos, bPos);
 		}
+
 	}
 }

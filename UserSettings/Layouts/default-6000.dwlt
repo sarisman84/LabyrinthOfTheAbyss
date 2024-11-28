@@ -898,7 +898,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Settings/Gameplay
+    - Assets/Settings
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -917,7 +917,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 74be0000
     m_LastClickedID: 48756
-    m_ExpandedIDs: 0000000014bf000016bf000018bf00001abf00001cbf00001ebf000020bf000022bf000024bf000026bf0000
+    m_ExpandedIDs: 0000000032be000034be000036be000038be00003abe00003cbe00003ebe000040be000042be000044be000046be000048be0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -946,7 +946,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000014bf000016bf000018bf00001abf00001cbf00001ebf000020bf000022bf000024bf000026bf0000
+    m_ExpandedIDs: 0000000032be000034be000036be000038be00003abe00003cbe00003ebe000040be000042be000044be000046be000048be0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.76612276, y: 38.655384, z: -30.62575}
+    m_Target: {x: -9.762756, y: -5.847128, z: -1.8355641}
     speed: 2
     m_Value: {x: 0.76612276, y: 38.655384, z: -30.62575}
   m_RenderMode: 0
@@ -1645,11 +1645,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.34553787, y: 0.0042233896, z: -0.0015459527, w: 0.93841046}
+    m_Target: {x: 0.25316858, y: -0.6121729, z: 0.21607713, w: 0.7172814}
     speed: 2
     m_Value: {x: -0.34553787, y: -0.0042233896, z: 0.0015459529, w: -0.93841046}
   m_Size:
-    m_Target: 12.315752
+    m_Target: 12.236097
     speed: 2
     m_Value: 12.315752
   m_Ortho:
@@ -1819,7 +1819,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 44}
     m_SelectedIDs: 7e5d0000
     m_LastClickedID: 23934
-    m_ExpandedIDs: 0000000014bf000016bf000018bf00001abf00001cbf00001ebf000020bf000022bf000024bf000026bf0000
+    m_ExpandedIDs: 0000000032be000034be000036be000038be00003abe00003cbe00003ebe000040be000042be000044be000046be000048be0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1848,7 +1848,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000014bf000016bf000018bf00001abf00001cbf00001ebf000020bf000022bf000024bf000026bf0000
+    m_ExpandedIDs: 0000000032be000034be000036be000038be00003abe00003cbe00003ebe000040be000042be000044be000046be000048be0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
