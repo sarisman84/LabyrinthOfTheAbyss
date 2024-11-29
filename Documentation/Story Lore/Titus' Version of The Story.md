@@ -221,3 +221,86 @@ As the dungeon crumbled, Julius stood before the dying pillar. The ark’s creat
 > The Dungeon/Bunker/Arc is advanced and lets people use "magic" the ship has some influents on the outside world. The arcane use complex spells/code, While the Holy/Church preform holy tasks for their Gods and given magic/permissions/a promotion.  
 
 
+### **The Shifting Pillar: Draft Three**
+
+The dungeon loomed like an ancient sentinel, its glowing central pillar piercing through the immense layers of a forgotten world. Once a bastion of salvation, it had become a corrupted ark, its purpose twisted by time and the instability of its core. Each floor grew more fractured as the heat from the dungeon’s failing engine—deep in its volcanic depths—spread upward, breaking the magic and technology that once protected humanity.
+
+The dungeon’s creators had aimed to save their people from extinction, harnessing technology so advanced it was mistaken for divine magic. But desperation had blinded them, and their attempts to fix the ark only created relics of dangerous power, like the fabled **Stone of Resurrection**.
+
+### **Prologue: A Broken Vanguard**
+
+Cazarus, once a noble Vanguard of the Holy Monarch Kingdom, had lost everything. Betrayed by his rivals, his family slaughtered, he fled into the wilderness with nothing but vengeance in his heart. Injured, he stumbles across a colossal cave entrance, he enters it to find shelter. Its glowing central pillar whispered promises of salvation.
+
+### **Level One: The Forest of Shadows**
+
+The dungeon’s first floor was a sprawling forest overtaken by the magic of the central pillar. Roots entwined with glowing veins of energy, and the air buzzed with arcane whispers. Before venturing further, Cazarus stumbled into **The Abandoned Chapel**, a decaying sanctuary nestled beneath the canopy.
+
+Here, Cazarus met **Al Thymer**, a rambling, elderly priest exiled from the Holy Monarch Kingdom for his forgetfulness. Despite his scattered mind, Al proved invaluable, gifting Cazarus a **Soul Anchor**—a glowing shard linked to the pillar that would allow him to return to this hub if he fell.
+
+“Ah... this? Yes, yes, it’ll bring you back. But only to... where you touched the... oh, forget it. You’ll figure it out!” Al muttered.
+
+Al Thymer then inquires about Cazarus' purpose in the dungeon. "I'm on the run from the Monarchy, they killed my family." Al Thymer then explains the resurrection stone and its rumors.
+
+Resting in the chapel, Cazarus gleaned fragments of the dungeon’s history. Al spoke of the ark’s original purpose, but his words were muddled, leaving Cazarus with more questions than answers.
+
+Cazarus pressed onward, confronting the man who had killed his family in a tense battle among the forest’s warped trees. After emerging victorious, he returned briefly to the chapel, where Al cryptically urged him to descend deeper to find the stone and save his family.
+### **Level Two: The Mountain of Void**
+
+The second floor was a treacherous mountain range split by jagged void-infused spires. The glow of the central pillar fractured here, its light dimming as it fought against the corruption of a failed relay. Before scaling the peaks, Cazarus discovered **The Void Observatory**, an eerie yet tranquil hub perched on the mountain’s edge.
+
+Here, he met **The Mage**, a scholar from the Void Occultists. Though initially wary, the Mage recognized Cazarus' connection to the Holy Monarch Kingdom and saw an opportunity for answers. The Mage’s calm intellect contrasted sharply with Cazarus' fiery resolve.
+
+“The Void Stone,” the Mage warned, “it is a horrific aberration as a result of the brokenness of the pillar. No one has been able to defeat the Void Stone.”
+
+The Mage provided insight into the dungeon’s mechanisms, explaining that what appeared as magic was in fact the first iteration of magic that the world has seen. However, the Mage’s loyalty to the Occultists created tension, as their nihilistic philosophy clashed with Cazarus’s desperate hope.
+
+Julius climbed the peaks and confronted the **Void Stone**, a colossal, sentient shard that lashed out with corrupted energy. With the Mage’s reluctant help, he destroyed the stone. Allowing passage deeper into the dungeon.
+
+### **Level Three: The Frozen Necropolis**
+
+Descending further, Cazarus entered a freezing wasteland where the dungeon’s true purpose only became more mysterious. Freezing Coffins lined the walls, their frosted surfaces glowing faintly. Each containing a mummified humanoid. Was this a place of death or preservation? Who put these bodies here? Before facing the dangers ahead, Cazarus found respite in **The Frostbound Refuge**, a hub where scattered survivors clung to life amidst the cold.
+
+In this refuge, the party encounters Farlas. "Another damn looter? Or maybe one of those cult freaks? How did they get past my Stone? Don’t bother. The only thing left down here is frostbite and disappointment. But if you’re here to break something else, I’ll add your bones to the ice myself." After the group explains their situation, Farlas offer information about the stone. She only heard about it from these notes she found laying around. She thinks it might be the work of her colleague but she is unsure. Farlas offers unique upgrades to the party members equipment to help with the next Boss.
+
+Farlas explains how  the floor’s central guardian—a skeletal construct animated by the pillar—had turned rogue, its corrupted programming indiscriminately targeting all intruders. She cant beat it by herself as she has tried MANY times, as she gestures towards the save state stone.
+
+The mage speaks up "I read about this sentinel in my studies! Isn't it thousands of years old? How old are you Farlas?" looking offended by the question Farlas ignores him and continues explaining details of this skeleton and possible theories to defeat it.
+
+After acquiring the proper resources and crafting the proper materials, the group heads to defeat the sentinel. Farlas does not believe they stand a chance.
+
+The battle with the skeletal guardian was fierce, its mechanical yet skeletal frame resistant to Cazarus’s attacks. When its felled, there is an eerie silence, foreshadowing the depth of danger looming ahead.
+
+### **Level Four: The Shifting Desert**
+
+Heat replaced cold as Cazarus descended into a desert floor of endless dunes. Here, the pillar’s light shimmered like a mirage, warping reality and creating illusions to test the weak-willed. Before navigating the sands, Cazarus was ambushed by **The Rogue**, a thief from the lawless faction. The Rogue stole Cazarus’s most valuable item, forcing him into a battle. Cazarus swings his weapon, but mis-steps due to shifting sands. The rogue maneuvers around it knocks him out.
+
+Captured and taken to **The Shifting Bazaar**, a hidden hub within the desert, Julius was interrogated by the Rogue’s faction. Their disdain for the Holy Monarch Kingdom initially put them at odds, but a shared hatred forged an uneasy truce.
+
+“The pillar manipulates more than just magic,” the Rogue noted, their sharp eyes scanning the shifting sands. “It messes with your head. If you’re not careful, it’ll swallow you whole.”
+
+The two worked together to navigate the desert’s dangers, including a confrontation with a **Mirage of Cazarus**. The reflection taunted him with his own doubts, forcing him to confront the selfishness of his quest.
+
+### **Level Five: The Volcanic Abyss**
+
+The dungeon’s lowest floors burned with molten fury, its failing engine emitting waves of heat that warped the very air. The central pillar here was a cracked, searing beacon, its light threatening to collapse entirely. Before facing the abyss’s horrors, Cazarus found a moment of reprieve in **The Forge of Ashes**, a hub world where molten streams powered ancient forges.
+
+Here, Cazarus tempered his weapons and prepared for the final challenge. The Rogue and Mage accompanied him, each grappling with their own doubts about the journey. The Alchemist, a strange and erratic figure, sent cryptic messages through the dungeon’s failing relays, hinting at the truth behind the pillar and the stone of resurrection.
+
+Al Thymer steps into view his figure recognizable as a skinny old man, covered in robes. "Julius! Its you! Who are these people." Slightly annoyed but glad to see a familiar face "No its me, Cazarus." the old man looks down confused. "Oh, yes yes, thats what I meant. ANWAY-" Al Thymer takes off his robe revealing the most giant muscled physique youve ever seen. "Lets get you some stronger weapons!" Al Thymer is here to help you craft your weapons. Al Thymer then remembers "By the way, I gave some guy a soul anchor that I met here. I maybe shouldnt have done that."
+
+At the heart of the abyss, Julius confronted the general who had ordered his family’s execution. He has the soul anchor. The battle was a culmination of Cazarus’s vengeance, fought amidst a crumbling world.
+
+### **The Final Level: The Alchemist’s Sanctum**
+
+The dungeon’s core was a surreal expanse where the pillar’s light burned brightest. Cazarus found **The Alchemist**, of the leading constructors of the dungeon, a half-mad visionary who revealed the stone’s true nature: it was not a means of resurrection but a desperate attempt to repair the pillar.
+
+The Alchemist goes into a monologue of the creation of the Dungeon and how the pillar cracked due to the outside forces of the apocalyptic times he comes from. He has almost lost hope in fixing the pillar but maybe he can help revive Cazarus's family and continue performing experiments with the stone. Half curious about how the stone will work in his situation and half dubious (knowing the stone probably will not work) he reveals the resting place of the stone. The Alchemist looks down at his feet "Now there is a guardian of the stone, I do not know where he came from, but to get there you will have to defeat him."
+
+The final guardian, a vessel of holy power, stood between Julius and the pillar. When Julius defeated it and activated the stone, the dungeon twisted his wish. His family returned as a grotesque amalgamation of flesh and machine, fused with the guardian’s corrupted essence.
+
+### **Epilogue: A Fractured Legacy**
+
+The Vanguard seeing the outcome of the corrupted wish and the destroyed guardian, the vanguard takes its weapon to stand watch over the dungeon so no others may make the same mistake.
+
+
+
