@@ -52,6 +52,7 @@ The **Shifting Bazaar** offered some relief, its chaotic energy a stark contrast
 The final level burned with molten fury. The pillar here pulsed with raw energy, its light casting twisted shadows on the cavern walls. Julius faced relentless enemies, their forms warped by heat and hatred. At the heart of this fiery realm was the mastermind who had ordered his family’s murder—a cruel general of the Holy Monarch Kingdom.
 
 The duel was an inferno of rage and retribution. Julius fought not just for his family, but for the man he had been before betrayal stole everything. When the general fell, the pillar’s light dimmed, leading him to the **Forge of Ashes**, where a blacksmith tempered his weapons and his resolve.
+(Note: The Volcano is not a real volcano but a high up point that has metal melting down it like lava and some "magic" replacing the metal to fix it but then melting again. )
 
 ---
 
@@ -68,3 +69,24 @@ But the magic twisted his wishes. His family returned, fused with the guardian�
 ### **Epilogue: The Shifting Pillar**
 
 As the dungeon settled, the pillar dimmed, its magic sated for now. Julius stood alone amidst the wreckage, the stone’s power spent. His family was gone, but so was his anger. The dungeon shifted again, preparing for its next challenger, while Julius walked away, carrying the weight of his choices into a world forever changed.
+
+
+> [!NOTE] Notes
+> 
+(Note: The Volcano is not a real volcano but a high up point that has metal melting down it like lava and some "magic" replacing the metal to fix it but then melting again. )
+
+> [!NOTE] Alchemist
+> When he makes a break through on the arcane writings in the hub world the hologram / screen just show code from the game it self.
+> 
+
+
+> [!NOTE] Gods
+> The "Gods" are A.I. in the ship , and their domain is what they are designated to do. 
+
+
+> [!NOTE] Magic
+> The Dungeon/Bunker/Arc is advanced and lets people use "magic" the ship has some influents on the outside world. The arcane use complex spells/code, While the Holy/Church preform holy tasks for their Gods and given magic/permissions/a promotion.  
+
+
+
+
