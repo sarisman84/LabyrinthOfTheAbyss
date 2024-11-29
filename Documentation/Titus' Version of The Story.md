@@ -70,6 +70,102 @@ But the magic twisted his wishes. His family returned, fused with the guardian�
 
 As the dungeon settled, the pillar dimmed, its magic sated for now. Julius stood alone amidst the wreckage, the stone’s power spent. His family was gone, but so was his anger. The dungeon shifted again, preparing for its next challenger, while Julius walked away, carrying the weight of his choices into a world forever changed.
 
+---
+
+DRAFT 2
+### **The Shifting Pillar: Draft Three**
+
+The dungeon loomed like an ancient sentinel, its glowing central pillar piercing through the immense layers of a forgotten world. Once a bastion of salvation, it had become a corrupted ark, its purpose twisted by time and the instability of its core. Each floor grew more fractured as the heat from the dungeon’s failing engine—deep in its volcanic depths—spread upward, breaking the magic and technology that once protected humanity.
+
+The dungeon’s creators had aimed to save their people from extinction, harnessing technology so advanced it was mistaken for divine magic. But desperation had blinded them, and their attempts to fix the ark only created relics of dangerous power, like the fabled **Stone of Resurrection**.
+
+---
+
+### **Prologue: A Broken Vanguard**
+
+Julius, once a noble Vanguard of the Holy Monarch Kingdom, had lost everything. Betrayed by his rivals, his family slaughtered, he fled into the wilderness with nothing but vengeance in his heart. Drawn to the dungeon by rumors of the stone’s legendary power, he entered the colossal structure. Its glowing central pillar whispered promises of salvation.
+
+---
+
+### **Level One: The Forest of Shadows**
+
+The dungeon’s first floor was a sprawling forest overtaken by the magic of the central pillar. Roots entwined with glowing veins of energy, and the air buzzed with arcane whispers. Before venturing further, Julius stumbled into **The Abandoned Chapel**, a decaying sanctuary nestled beneath the canopy.
+
+Here, Julius met **Al Thymer**, a rambling, elderly priest exiled from the Holy Monarch Kingdom for his forgetfulness. Despite his scattered mind, Al proved invaluable, gifting Julius a **Soul Anchor**—a glowing shard linked to the pillar that would allow him to return to this hub if he fell.
+
+“Ah... this? Yes, yes, it’ll bring you back. But only to... where you touched the... oh, forget it. You’ll figure it out!” Al muttered.
+
+Resting in the chapel, Julius gleaned fragments of the dungeon’s history. Al spoke of the ark’s original purpose, but his words were muddled, leaving Julius with more questions than answers.
+
+Julius pressed onward, confronting the man who had killed his family in a tense battle among the forest’s warped trees. After emerging victorious, he returned briefly to the chapel, where Al cryptically urged him to descend deeper.
+
+---
+
+### **Level Two: The Mountain of Void**
+
+The second floor was a treacherous mountain range split by jagged void-infused spires. The glow of the central pillar fractured here, its light dimming as it fought against the corruption of a failed relay. Before scaling the peaks, Julius discovered **The Void Observatory**, an eerie yet tranquil hub perched on the mountain’s edge.
+
+Here, he met **The Mage**, a scholar from the Void Occultists. Though initially wary, the Mage recognized Julius’s connection to the Holy Monarch Kingdom and saw an opportunity for answers. The Mage’s calm intellect contrasted sharply with Julius’s fiery resolve.
+
+“The Void Stone,” the Mage warned, “is not of this world. It is a failed attempt to stabilize the pillar. If you fight it, you risk everything.”
+
+The Mage provided insight into the dungeon’s mechanisms, explaining that what appeared as magic was ancient technology. However, the Mage’s loyalty to the Occultists created tension, as their nihilistic philosophy clashed with Julius’s desperate hope.
+
+Julius climbed the peaks and confronted the **Void Stone**, a colossal, sentient shard that lashed out with corrupted energy. With the Mage’s reluctant help, he destroyed the stone, but not before the mountain quaked, signaling the dungeon’s further destabilization.
+
+---
+
+### **Level Three: The Frozen Necropolis**
+
+Descending further, Julius entered a cryogenic storage floor where the dungeon’s true purpose became clearer. Cryopods lined the walls, their frosted surfaces glowing faintly. This was not a place of death but preservation. Before facing the dangers ahead, Julius found respite in **The Frostbound Refuge**, a hub where scattered survivors clung to life amidst the cold.
+
+The Mage accompanied Julius, unraveling more of the dungeon’s secrets. The relays, they realized, extended beyond the ark’s walls, delivering the illusion of magic to the Holy Monarch Kingdom and Void Occultists. However, the floor’s central guardian—a skeletal construct animated by the pillar—had turned rogue, its corrupted programming indiscriminately targeting all intruders.
+
+“The pillar,” the Mage theorized, “is the true source of magic, but it’s broken. This... thing isn’t undead. It’s a machine.”
+
+The battle with the skeletal guardian was fierce, its mechanical frame resistant to Julius’s attacks. When it fell, the Mage lingered, haunted by the realization that the dungeon’s failures had seeped into the outside world.
+
+---
+
+### **Level Four: The Shifting Desert**
+
+Heat replaced cold as Julius descended into a desert floor of endless dunes. Here, the pillar’s light shimmered like a mirage, warping reality and creating illusions to test the weak-willed. Before navigating the sands, Julius was ambushed by **The Rogue**, a thief from the lawless faction. The Rogue stole Julius’s most valuable item, forcing him into a desperate chase.
+
+Captured and taken to **The Shifting Bazaar**, a hidden hub within the desert, Julius was interrogated by the Rogue’s faction. Their disdain for the Holy Monarch Kingdom initially put them at odds, but a shared hatred forged an uneasy truce.
+
+“The pillar manipulates more than just magic,” the Rogue noted, their sharp eyes scanning the shifting sands. “It messes with your head. If you’re not careful, it’ll swallow you whole.”
+
+The two worked together to navigate the desert’s dangers, including a confrontation with a **Mirage of Julius**. The reflection taunted him with his own doubts, forcing him to confront the selfishness of his quest.
+
+---
+
+### **Level Five: The Volcanic Abyss**
+
+The dungeon’s lowest floors burned with molten fury, its failing engine emitting waves of heat that warped the very air. The central pillar here was a cracked, searing beacon, its light threatening to collapse entirely. Before facing the abyss’s horrors, Julius found a moment of reprieve in **The Forge of Ashes**, a hub world where molten streams powered ancient forges.
+
+Here, Julius tempered his weapons and prepared for the final challenge. The Rogue and Mage accompanied him, each grappling with their own doubts about the journey. The Alchemist, a strange and erratic figure, sent cryptic messages through the dungeon’s failing relays, hinting at the truth behind the pillar and the stone of resurrection.
+
+At the heart of the abyss, Julius confronted the general who had ordered his family’s execution. The battle was a culmination of Julius’s vengeance, fought amidst a crumbling world.
+
+---
+
+### **The Final Level: The Alchemist’s Sanctum**
+
+The dungeon’s core was a surreal expanse where the pillar’s light burned brightest. Julius found **The Alchemist**, the dungeon’s creator, a half-mad visionary who revealed the stone’s true nature: it was not a means of resurrection but a desperate attempt to repair the pillar.
+
+“The dungeon isn’t magic,” the Alchemist raved. “It’s technology! A bunker to save the world! But it’s broken, like me. The stone... it won’t bring them back. Not like you hope.”
+
+The final guardian, a vessel of holy power, stood between Julius and the pillar. When Julius defeated it and activated the stone, the dungeon twisted his wish. His family returned as a grotesque amalgamation of flesh and machine, fused with the guardian’s corrupted essence.
+
+---
+
+### **Epilogue: A Fractured Legacy**
+
+As the dungeon crumbled, Julius stood before the dying pillar. The ark’s creators had meant to save the world, but their desperation had birthed only ruin. Julius, broken and bloodied, emerged from the dungeon, its flickering light behind him a beacon for the next desperate soul.
+
+
+
+
 
 > [!NOTE] Notes
 > 
@@ -86,7 +182,5 @@ As the dungeon settled, the pillar dimmed, its magic sated for now. Julius stood
 
 > [!NOTE] Magic
 > The Dungeon/Bunker/Arc is advanced and lets people use "magic" the ship has some influents on the outside world. The arcane use complex spells/code, While the Holy/Church preform holy tasks for their Gods and given magic/permissions/a promotion.  
-
-
 
 
