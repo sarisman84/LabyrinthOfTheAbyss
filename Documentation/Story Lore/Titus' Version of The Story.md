@@ -85,6 +85,13 @@ The dungeon’s creators had aimed to save their people from extinction, harness
 
 Julius, once a noble Vanguard of the Holy Monarch Kingdom, had lost everything. Betrayed by his rivals, his family slaughtered, he fled into the wilderness with nothing but vengeance in his heart. Drawn to the dungeon by rumors of the stone’s legendary power, he entered the colossal structure. Its glowing central pillar whispered promises of salvation.
 
+
+> [!WARNING] Fix
+> Vanguard stumbles in to the dungeon to hide due to his injuries.
+> 
+
+
+
 ---
 
 ### **Level One: The Forest of Shadows**
@@ -98,6 +105,11 @@ Here, Julius met **Al Thymer**, a rambling, elderly priest exiled from the Holy 
 Resting in the chapel, Julius gleaned fragments of the dungeon’s history. Al spoke of the ark’s original purpose, but his words were muddled, leaving Julius with more questions than answers.
 
 Julius pressed onward, confronting the man who had killed his family in a tense battle among the forest’s warped trees. After emerging victorious, he returned briefly to the chapel, where Al cryptically urged him to descend deeper.
+
+
+> [!Warning] Fix
+> Al Thymer explains the Soul Anchor, Then the rumored Resurrections stone giving him hope to get his family back.
+
 
 ---
 
@@ -113,6 +125,11 @@ The Mage provided insight into the dungeon’s mechanisms, explaining that what 
 
 Julius climbed the peaks and confronted the **Void Stone**, a colossal, sentient shard that lashed out with corrupted energy. With the Mage’s reluctant help, he destroyed the stone, but not before the mountain quaked, signaling the dungeon’s further destabilization.
 
+> [!WARNING] Fix
+> Mage not know it is Tec only thinks it is magic.
+
+
+
 ---
 
 ### **Level Three: The Frozen Necropolis**
@@ -124,6 +141,10 @@ The Mage accompanied Julius, unraveling more of the dungeon’s secrets. The rel
 “The pillar,” the Mage theorized, “is the true source of magic, but it’s broken. This... thing isn’t undead. It’s a machine.”
 
 The battle with the skeletal guardian was fierce, its mechanical frame resistant to Julius’s attacks. When it fell, the Mage lingered, haunted by the realization that the dungeon’s failures had seeped into the outside world.
+
+
+> [!WARNING] Fix
+> In lore it is a frozen wasteland (we know it is also cryogenic storage but in lore the characters don't) (cryopods = mages thinks it is experiments from the makers) (already know of the Relays, magic lay lines, but it is explained to the player for the first time.)(again mage think magic not tec, only implied the player to be tec not magic)(remove / change last paragraph)
 
 ---
 
@@ -137,6 +158,10 @@ Captured and taken to **The Shifting Bazaar**, a hidden hub within the desert, J
 
 The two worked together to navigate the desert’s dangers, including a confrontation with a **Mirage of Julius**. The reflection taunted him with his own doubts, forcing him to confront the selfishness of his quest.
 
+
+> [!WARNING] Fix
+> No chase, there is a fight that you always lose.(if you win he plays a trump card/trap)
+
 ---
 
 ### **Level Five: The Volcanic Abyss**
@@ -146,6 +171,11 @@ The dungeon’s lowest floors burned with molten fury, its failing engine emitti
 Here, Julius tempered his weapons and prepared for the final challenge. The Rogue and Mage accompanied him, each grappling with their own doubts about the journey. The Alchemist, a strange and erratic figure, sent cryptic messages through the dungeon’s failing relays, hinting at the truth behind the pillar and the stone of resurrection.
 
 At the heart of the abyss, Julius confronted the general who had ordered his family’s execution. The battle was a culmination of Julius’s vengeance, fought amidst a crumbling world.
+
+
+> [!WARNING] Add
+> Boss is attempting to get in to the alchemists sanctum. Al Thymers is helping forge the vanguard's weapon at the forge. (boss has a soul anchor)
+
 
 ---
 
@@ -157,6 +187,11 @@ The dungeon’s core was a surreal expanse where the pillar’s light burned bri
 
 The final guardian, a vessel of holy power, stood between Julius and the pillar. When Julius defeated it and activated the stone, the dungeon twisted his wish. His family returned as a grotesque amalgamation of flesh and machine, fused with the guardian’s corrupted essence.
 
+
+> [!WARNING] Fix
+> Alchemist is not The creator, he was it the group that created it and had a hand in its creation.(this is why he can't just fix every thing) the alchemist knows it is tec but has no care to explain the do to the time constraint so just ends up saying magic to the group to not confuse them.
+
+
 ---
 
 ### **Epilogue: A Fractured Legacy**
@@ -164,6 +199,8 @@ The final guardian, a vessel of holy power, stood between Julius and the pillar.
 As the dungeon crumbled, Julius stood before the dying pillar. The ark’s creators had meant to save the world, but their desperation had birthed only ruin. Julius, broken and bloodied, emerged from the dungeon, its flickering light behind him a beacon for the next desperate soul.
 
 
+> [!WARNING] Change
+> The Vanguard seeing the outcome of the corrupted wish and the destroyed guardian, the vanguard takes its weapon to stand watch over the dungeon so no others may make the same mistake.  
 
 
 
