@@ -73,7 +73,7 @@ As the dungeon settled, the pillar dimmed, its magic sated for now. Julius stood
 ---
 
 DRAFT 2
-### **The Shifting Pillar: Draft Three**
+### **The Shifting Pillar: Draft Two**
 
 The dungeon loomed like an ancient sentinel, its glowing central pillar piercing through the immense layers of a forgotten world. Once a bastion of salvation, it had become a corrupted ark, its purpose twisted by time and the instability of its core. Each floor grew more fractured as the heat from the dungeon’s failing engine—deep in its volcanic depths—spread upward, breaking the magic and technology that once protected humanity.
 
