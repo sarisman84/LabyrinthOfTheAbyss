@@ -13,6 +13,13 @@ Level Three alteration: Cryogenic/Necromancy, player can figure out that magic i
 
 The dungeon has magical relays that go into the holy monarch kingdom, the void occultists have their own relay, but their community is more remote and smaller than the holy kingdom. This is how magic presents itself in the outside world because it all comes from the source of magic which is the dungeon/bunker/arc.
 
+
+Al Thymer was captured by the general in level 5. Quest to rescue him? Really just more narrative quests on each level
+
+Make the general more recurring
+
+
+
 New Characters:
 The Alchemist(the final floor)
 The alchemist made the stone and the dungeon. basically just a software engineer, but with magical context. Holy force imposed ideas of how to build dungeon, was like OH SHIT i can save the world, everyone thinks hes crazy until the world starts ending. Just crazy drug doing engineer type. Think intp in mbti
