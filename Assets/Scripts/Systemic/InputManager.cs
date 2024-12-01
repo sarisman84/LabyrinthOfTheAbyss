@@ -29,17 +29,17 @@ namespace lota.systemic
 		[MenuItem("Tools/LOTA/Update Keybind Enums")]
 		private static void GenerateKeybindEnums()
 		{
-			var keybindEnum = new StringBuilder();
-			var mapEnum = new StringBuilder();
+            StringBuilder keybindEnum = new StringBuilder();
+            StringBuilder mapEnum = new StringBuilder();
 			keybindEnum.Append("public enum InputActionID {");
 			mapEnum.Append("public enum InputActionMapID {");
 			for (int i = 0; i < KeybindAsset.actionMaps.Count; i++)
 			{
-				var actionMap = KeybindAsset.actionMaps[i];
+                InputActionMap actionMap = KeybindAsset.actionMaps[i];
 				mapEnum.Append($"{actionMap.name}{(i == KeybindAsset.actionMaps.Count - 1 ? "" : ",")}");
 				for (int j = 0; j < actionMap.actions.Count; j++)
 				{
-					var action = actionMap.actions[j];
+                    InputAction action = actionMap.actions[j];
 					keybindEnum.Append($"{actionMap.name}_{action.name}{(j == actionMap.actions.Count - 1 ? "" : ",")}");
 				}
 
@@ -47,7 +47,7 @@ namespace lota.systemic
 			keybindEnum.Append("}");
 			mapEnum.Append("}");
 
-			var fileContent = new StringBuilder();
+            StringBuilder fileContent = new StringBuilder();
 			fileContent.AppendLine("namespace lota.generated.input\n{");
 			fileContent.AppendLine(mapEnum.ToString());
 			fileContent.AppendLine(keybindEnum.ToString());
@@ -67,13 +67,13 @@ namespace lota.systemic
 		{
 			mapDatabase = new Dictionary<int, InputActionMap>();
 			keybindDatabase = new Dictionary<int, InputAction>();
-			var count = 0;
+            int count = 0;
 
 			for (int i = 0; i < KeybindAsset.actionMaps.Count; i++)
 			{
-				var actionMap = KeybindAsset.actionMaps[i];
+                InputActionMap actionMap = KeybindAsset.actionMaps[i];
 				mapDatabase.Add(i, actionMap);
-				foreach (var action in actionMap.actions)
+				foreach (InputAction action in actionMap.actions)
 				{
 					keybindDatabase.Add(count++, action);
 				}
@@ -93,29 +93,29 @@ namespace lota.systemic
 
 		public bool IsActionPressed(InputActionID actionID)
 		{
-			var key = (int)actionID;
-			var result = keybindDatabase[key].ReadValue<float>() > 0 && keybindDatabase[key].triggered;
+            int key = (int)actionID;
+            bool result = keybindDatabase[key].ReadValue<float>() > 0 && keybindDatabase[key].triggered;
 
 			return result;
 		}
 
 		public bool IsActionHeld(InputActionID actionID)
 		{
-			var key = (int)actionID;
-			var result = keybindDatabase[key].ReadValue<float>() > 0;
+            int key = (int)actionID;
+            bool result = keybindDatabase[key].ReadValue<float>() > 0;
 
 			return result;
 		}
 
 		public Vector2 GetActionAxis(InputActionID actionID)
 		{
-			var action = keybindDatabase[(int)actionID];
+            InputAction action = keybindDatabase[(int)actionID];
 			return action.ReadValue<Vector2>();
 		}
 
 		public void SwitchControlActionMap(InputActionMapID mapID)
 		{
-			var oldMap = currentMap;
+            int oldMap = currentMap;
 			currentMap = (int)mapID;
 
 			mapDatabase[oldMap].Disable();

@@ -12,17 +12,17 @@ namespace lota.gameplay
 	{
 
 		[Header("Jump Settings")]
-		public float jumpHeightInMeters;
-		public float groundDetectionWidth = 0.1f;
-		public Vector3 groundDetectionPositionOffset;
-		public Vector3 groundDetectionSizeOffset;
-		public LayerMask groundDetectionMask;
+		[SerializeField] private float jumpHeightInMeters;
+		[SerializeField] private float groundDetectionWidth = 0.1f;
+		[SerializeField] private Vector3 groundDetectionPositionOffset;
+		[SerializeField] private Vector3 groundDetectionSizeOffset;
+		[SerializeField] private LayerMask groundDetectionMask;
 
 		[Header("Horizontal Movement Settings")]
-		public float movementSpeed;
-		public float sprintSpeed;
+		[SerializeField] private float movementSpeed;
+		[SerializeField] private float sprintSpeed;
 		[Range(0.0f, 1.0f)]
-		public float accelerationSpeed = 0.8f;
+		[SerializeField] private float accelerationSpeed = 0.8f;
 
 		private float JumpVelocity => Mathf.Sqrt(2 * Physics.gravity.magnitude * jumpHeightInMeters);
 		private Vector3 GroundDetectorPosition => collider.bounds.center - Vector3.up * (collider.bounds.extents.y + (groundDetectionWidth / 2.0f)) + groundDetectionPositionOffset;
@@ -82,7 +82,7 @@ namespace lota.gameplay
 			}
 			else if (inputService.GetActionAxis(InputActionID.Player_Move).magnitude > 0.0f)
 			{
-				var finalState = inputService.IsActionHeld(InputActionID.Player_Sprint) ?
+				PlayerState finalState = inputService.IsActionHeld(InputActionID.Player_Sprint) ?
 				inputService.IsActionHeld(InputActionID.Player_Crouch) ? dodgeroll : sprint : inputService.IsActionHeld(InputActionID.Player_Crouch) ? crouch : move;
 				stateMachine.TrySetState(finalState);
 			}
@@ -109,14 +109,14 @@ namespace lota.gameplay
 
 		public static Vector3 LocalizedInputToCameraLook(PlayerController player, Vector3 rawInput)
 		{
-			var result = player.mainCamera.transform.right * rawInput.x + player.mainCamera.transform.forward * rawInput.z;
+			Vector3 result = player.mainCamera.transform.right * rawInput.x + player.mainCamera.transform.forward * rawInput.z;
 			result.y = 0;
 			return result.normalized;
 		}
 
 		private void HandleGroundCheck()
 		{
-			var result = Physics.OverlapBoxNonAlloc(GroundDetectorPosition, GroundDetectorSize, groundCheckAlloc, transform.rotation, groundDetectionMask);
+			int result = Physics.OverlapBoxNonAlloc(GroundDetectorPosition, GroundDetectorSize, groundCheckAlloc, transform.rotation, groundDetectionMask);
 			IsGrounded = result > 0;
 		}
 
@@ -135,8 +135,8 @@ namespace lota.gameplay
 			Gizmos.DrawWireCube(collider.bounds.center, collider.bounds.size);
 
 			Gizmos.color = Color.cyan;
-			var aPos = collider.bounds.center;
-			var bPos = new Vector3(collider.bounds.center.x, lastKnownYPositionBeforeJump, collider.bounds.center.z) + Vector3.up * jumpHeightInMeters;
+			Vector3 aPos = collider.bounds.center;
+			Vector3 bPos = new Vector3(collider.bounds.center.x, lastKnownYPositionBeforeJump, collider.bounds.center.z) + Vector3.up * jumpHeightInMeters;
 			Gizmos.DrawSphere(aPos, 0.05f);
 			Gizmos.DrawSphere(bPos, 0.05f);
 			Gizmos.DrawLine(aPos, bPos);

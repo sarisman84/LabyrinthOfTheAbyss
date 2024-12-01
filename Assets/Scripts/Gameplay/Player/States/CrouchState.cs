@@ -24,9 +24,9 @@ namespace lota.gameplay
 
             public override void OnFixedUpdate()
             {
-                var newLinearVelocity = PlayerController.LocalizedInputToCameraLook(player, InputService.GetActionAxis(InputActionID.Player_Move).ToVector3XZ()) * player.sprintSpeed;
-                var targetLinearVelocity = new Vector3(newLinearVelocity.x, player.body.linearVelocity.y, newLinearVelocity.z);
-                var oldLinearVelicity = player.body.linearVelocity;
+                Vector3 newLinearVelocity = PlayerController.LocalizedInputToCameraLook(player, InputService.GetActionAxis(InputActionID.Player_Move).ToVector3XZ()) * player.sprintSpeed;
+                Vector3 targetLinearVelocity = new Vector3(newLinearVelocity.x, player.body.linearVelocity.y, newLinearVelocity.z);
+                Vector3 oldLinearVelicity = player.body.linearVelocity;
                 player.body.linearVelocity = Vector3.Lerp(oldLinearVelicity, targetLinearVelocity, player.accelerationSpeed);
             }
         }

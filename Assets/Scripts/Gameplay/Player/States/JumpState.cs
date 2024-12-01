@@ -18,7 +18,7 @@ namespace lota.gameplay
             public override void OnEnterState()
             {
                 player.lastKnownYPositionBeforeJump = player.collider.bounds.center.y;
-                var targetLinearVelocity = -Physics.gravity.normalized * player.JumpVelocity;
+                Vector3 targetLinearVelocity = -Physics.gravity.normalized * player.JumpVelocity;
                 player.body.linearVelocity += targetLinearVelocity;
                 player.IsGrounded = false;
 
