@@ -30,3 +30,27 @@ His name is Al Thymer. A very old and forgetful priest(has alzheimers) Was fired
 New magical items:
 
 Item that helps you rez yourself: an item thats being handed out like candy by al thymer. It returns you to your save state in the last hub you were in. There are pillars that are effectively checkpoints that are related to these items that update your save state stone.
+
+
+
+## List of Characters
+
+### Good Guys
+	Cazarus
+	The Mage(TBD)
+	The Rogue(TBD)
+	Al Thymer
+	Farlas
+	Mysterious Hunter(TBD)
+	The Mysterious Figure in the notes (who is the final final boss)
+
+### Neutral Guys
+
+	The Alchemist(TBD)
+
+
+### Bad Guys
+
+	Varestin
+	Elvaris
+	
