@@ -16,7 +16,12 @@
 	    - **Cazarus**: "Listen closely. The enemy’s defenses are layered and fortified. Their stronghold sits atop a natural chokepoint—accessible only through the eastern pass. That’s where they’ll expect us." _He points to a narrow valley._  "We’ll stage a diversion here, at the southern ridge. A small team will harry their sentries, drawing them into the open. Meanwhile, our main force will flank through the canyon to catch them off guard. Timing and discipline will win us this day."_He scans the room, locking eyes with each soldier._  
 	    - **Cazarus**: "Stay focused. Don’t let the heat of battle cloud your judgment. You are the Vanguard—chosen for your skill, not blind zealotry. Trust your training, and you’ll see your families again."
     - Cardinal Varestin interrupts, delivering an impassioned speech about divine destiny, undermining Cazarus’ measured approach.
-	    - _The door bursts open, and Cardinal Varestin strides in, his presence filling the room with an almost oppressive energy. His crimson robes flow like blood-soaked banners, and the golden crest atop his staff catches the flickering torchlight, casting long shadows across the map table. He raises his arms, addressing the room with booming authority._**Varestin**:  "Brothers and sisters of the Vanguard, _hear me_! For too long, this world has languished in shadows, its people blind to the glory of the Creator. But now, _you_—yes, you, the chosen instruments of divine will—stand at the precipice of destiny!"_He paces with dramatic fervor, gesturing wildly as though channeling a higher power._  **Varestin**:  "Do you think the Creator’s light shines only for those who sit idle, waiting for salvation? No! It shines for the righteous, the bold, the faithful! And it is through _us_, through our unyielding devotion, that the heretics will be cast down like the vermin they are."_Varestin slams his staff into the ground, the sound reverberating through the room like thunder. Some soldiers jump; others straighten their posture, caught between awe and unease._**Varestin**:  "Do not speak to me of tactics, of formations, of mortal limitations. Such things are fleeting, fragile—like autumn leaves before the wind! But faith? Faith is eternal. Faith bends swords, shatters shields, and rends the heavens themselves! It is not steel that will pierce the enemy's hearts—it is the Creator’s wrath, flowing through your veins!" _He steps closer to the soldiers, his piercing gaze scanning the room. His voice grows softer, almost reverent, drawing them in._**Varestin**:  "Do not fear death, for it is not the end. No, it is the beginning—the glorious ascent to the Creator’s embrace. Those who fall in this sacred battle shall rise as eternal martyrs, their names sung in the halls of paradise. And those who live? They will bear witness to the Creator’s will made manifest, their souls burning with the light of divine triumph!"_He turns, pointing toward the eastern pass on the map, as though it holds the very gates of heaven._  **Varestin**:  "The enemy will cower when they see you approach, for they will know they face not mere men, but the fury of the divine. Their walls will crumble, their strongholds will burn, and their blasphemous cries for mercy will be drowned in the roar of our righteous victory!"_His voice rises to a crescendo, his passion undeniable, his rhetoric intoxicating._  **Varestin**:  "Go forth, holy warriors! Strike with the Creator’s might! And when the battlefield is drenched in the blood of the heretics, remember this: it is not you who wield the sword—it is the Creator’s hand that guides it!"_He lowers his arms slowly, his fiery expression giving way to a serene smile, as though he has just delivered a divine truth. The room is silent, the weight of his words pressing down on the soldiers. Some cheer, their faces alight with zeal; others exchange uneasy glances, their loyalty to Cazarus tested by Varestin’s conviction._
+	    - _The door bursts open, and Cardinal Varestin strides in, his presence filling the room with an almost oppressive energy. His crimson robes flow like blood-soaked banners, and the golden crest atop his staff catches the flickering torchlight, casting long shadows across the map table. He raises his arms, addressing the room with booming authority.
+	    - _**Varestin**:  "Brothers and sisters of the Vanguard, _hear me_! For too long, this world has languished in shadows, its people blind to the glory of the Creator. But now, _you_—yes, you, the chosen instruments of divine will—stand at the precipice of destiny!"_He paces with dramatic fervor, gesturing wildly as though channeling a higher power._ 
+	    - **Varestin**:  "Do you think the Creator’s light shines only for those who sit idle, waiting for salvation? No! It shines for the righteous, the bold, the faithful! And it is through _us_, through our unyielding devotion, that the heretics will be cast down like the vermin they are."_Varestin slams his staff into the ground, the sound reverberating through the room like thunder. Some soldiers jump; others straighten their posture, caught between awe and unease.
+	    - _**Varestin**:  "Do not speak to me of tactics, of formations, of mortal limitations. Such things are fleeting, fragile—like autumn leaves before the wind! But faith? Faith is eternal. Faith bends swords, shatters shields, and rends the heavens themselves! It is not steel that will pierce the enemy's hearts—it is the Creator’s wrath, flowing through your veins!" _He steps closer to the soldiers, his piercing gaze scanning the room. His voice grows softer, almost reverent, drawing them in.
+	    - _**Varestin**:  "Do not fear death, for it is not the end. No, it is the beginning—the glorious ascent to the Creator’s embrace. Those who fall in this sacred battle shall rise as eternal martyrs, their names sung in the halls of paradise. And those who live? They will bear witness to the Creator’s will made manifest, their souls burning with the light of divine triumph!"_He turns, pointing toward the eastern pass on the map, as though it holds the very gates of heaven.
+	    - _  **Varestin**:  "The enemy will cower when they see you approach, for they will know they face not mere men, but the fury of the divine. Their walls will crumble, their strongholds will burn, and their blasphemous cries for mercy will be drowned in the roar of our righteous victory!"_His voice rises to a crescendo, his passion undeniable, his rhetoric intoxicating._  **Varestin**:  "Go forth, holy warriors! Strike with the Creator’s might! And when the battlefield is drenched in the blood of the heretics, remember this: it is not you who wield the sword—it is the Creator’s hand that guides it!"_He lowers his arms slowly, his fiery expression giving way to a serene smile, as though he has just delivered a divine truth. The room is silent, the weight of his words pressing down on the soldiers. Some cheer, their faces alight with zeal; others exchange uneasy glances, their loyalty to Cazarus tested by Varestin’s conviction._
     - Subtle friction between the Vanguard (pragmatic soldiers loyal to Cazarus) and the Zealots (fanatics loyal to Varestin) is introduced.
 	    - _Some soldiers cheer, inspired by Varestin’s fervor. Others exchange uneasy glances, their trust in Cazarus wavering. A young Vanguard soldier whispers to his comrade._**Vanguard Soldier 1**: "Faith doesn’t stop an arrow to the throat..."  
 	    - **Vanguard Soldier 2**: "Quiet! Do you want the Zealots to hear?"
@@ -234,3 +239,104 @@ _As Cazarus moves deeper into the dungeon, the pillar’s magic reacts to his pr
 
 - **Gameplay Mechanics**:  
     Cazarus’s initial abilities are tied to the pillar. Players may encounter glowing symbols that provide hints about the dungeon’s history and purpose. As Cazarus explores, he starts to piece together the connection between the dungeon and the magic that is breaking down the world.
+
+
+
+
+
+
+
+
+
+DRAFT 2
+
+
+### **Sequence 1: The Council Meeting Gone Wrong (Prologue Narrative)**
+
+#### **Setting**: The Grand Hall of the Holy Monarch Kingdom
+
+- The prologue begins with a tense council meeting. Key political factions—military leaders, religious figures, and influential nobles—are gathered to discuss the kingdom's worsening state: crop failures, magic becoming unpredictable, and growing unrest among the populace.
+
+#### **Key Players**:
+
+- **Cazarus**: A pragmatic and disciplined general advocating for unity and practical solutions.
+- **Cardinal Varestin**: Charismatic but volatile, pushing for extreme measures and divine retribution.
+- **Other Faction Leaders**: Nobles, scholars, and military commanders with differing priorities and loyalties.
+
+---
+
+#### **The Argument and Varestin’s Outburst**
+
+- The scene opens with Cazarus presenting his case for reform and unity:  
+    **Cazarus**:  
+    “The kingdom is faltering—not from lack of faith but from lack of foresight. We must address the root causes: the mismanagement of resources, the unrest among our people. Relying solely on divine intervention will not save us.”
+    
+- Varestin counters with growing frustration:  
+    **Cardinal Varestin**:  
+    “You speak as if faith is a burden! Do you not see the hand of the divine in our trials? These disasters are a test—a call for us to purge the weak and unworthy! Only through holy fire can this kingdom rise anew.”
+    
+- Other factions interject, escalating tensions:  
+    **Noble Representative**:  
+    “Fire? You mean to burn the very foundation of our lands? This madness will destroy us faster than famine!”
+    
+
+**Scholar Representative**:  
+“Even the temples cannot explain why magic has grown unstable. Perhaps we should explore the arcane itself, not merely pray for answers.”
+
+- Varestin becomes visibly enraged, his tone growing darker and more ominous. His frustration boils over as he sees opposition as blasphemy.
+
+**Cardinal Varestin** (slamming his fist on the table):  
+“Enough! I will not stand idle while traitors and cowards dismantle our kingdom. If you will not act for the greater good, then you are the disease infecting this realm!”
+
+- **The Turning Point**:  
+    Varestin signals to his loyal Zealots, who storm the hall, slaughtering dissenting voices. Chaos erupts. Cazarus draws his blade, trying to protect the innocent, but is overwhelmed as Varestin declares himself the true voice of divine will.
+
+**Cardinal Varestin** (amidst the chaos):  
+“Let this be the first step toward salvation! The heretics will fall, and the faithful will inherit the kingdom!”
+
+---
+
+#### **Gameplay Transition (Optional Prologue Segment)**
+
+- **Escape the Council Hall**:  
+    Players briefly control Cazarus as he fights through Zealot guards to escape. This section introduces basic combat and movement mechanics, ending with Cazarus fleeing into the night, realizing the extent of Varestin’s betrayal.
+
+---
+
+### **Sequence 2: Martial Law (Primary Opening)**
+
+#### **Setting**: The Capital City in Turmoil
+
+- The game starts with Cazarus already on the run, injured and branded a traitor. Varestin’s coup is in full effect, and the capital has descended into chaos under martial law. This sequence introduces the stealth-focused gameplay as players navigate the city while gradually uncovering the events of Sequence 1.
+
+---
+
+#### **Gradual Exposition of Sequence 1 Events**
+
+1. **Dialogue with Allies**:
+
+- As Cazarus meets survivors from the council, they recount the massacre and Varestin’s grab for power. Conversations reveal how Varestin framed Cazarus as a conspirator to consolidate control.
+
+**Survivor #1**:  
+“They didn’t just kill dissenters—they branded anyone who questioned Varestin’s methods as traitors. Your name was the first on their lips.”
+
+2. **Environmental Storytelling**:
+
+- Players pass through districts now under Zealot control, where propaganda posters denounce Cazarus and elevate Varestin as a divine savior. Burned effigies and scattered corpses tell the story of the purges that followed the council meeting.
+
+3. **Flashbacks**:
+
+- Key moments from Sequence 1 are revealed through flashbacks triggered by significant locations or items. For instance, finding the ruins of the council hall could trigger a memory of the confrontation.
+
+---
+
+#### **Core Gameplay: Escape and Discovery**
+
+- **Stealth and Survival**:  
+    Players must evade Zealot patrols while navigating the capital. Limited resources force players to choose between direct confrontation (if they find weapons) or stealth (using shadows and distractions).
+    
+- **Discovery of the Family Tragedy**:  
+    Cazarus returns to his home, hoping to find his family, only to discover the aftermath of Varestin’s purge. This moment deepens the personal stakes of the story and pushes him toward the dungeon.
+    
+- **Introduction of the Dungeon**:  
+    Injured and desperate, Cazarus stumbles upon the hidden entrance to the dungeon on the city’s outskirts. This mysterious place, glowing faintly with arcane energy, offers him a chance for survival and answers.
