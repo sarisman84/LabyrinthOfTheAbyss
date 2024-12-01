@@ -249,7 +249,7 @@ namespace lota.input
                     ""id"": ""e868abe9-74a0-4ba6-bfd5-5240f54dbc26"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""ScaleVector2(x=4,y=4)"",
                     ""groups"": "";Keyboard & Mouse"",
                     ""action"": ""Look"",
                     ""isComposite"": false,

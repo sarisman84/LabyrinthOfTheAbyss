@@ -8,8 +8,9 @@ using System;
 namespace lota.gameplay
 {
 	[RequireComponent(typeof(Rigidbody))]
-	public class PlayerController : MonoBehaviour
+	public partial class PlayerController : MonoBehaviour
 	{
+
 		[Header("Jump Settings")]
 		public float jumpHeightInMeters;
 		public float groundDetectionWidth = 0.1f;
@@ -24,24 +25,38 @@ namespace lota.gameplay
 		public float accelerationSpeed = 0.8f;
 
 		private float JumpVelocity => Mathf.Sqrt(2 * Physics.gravity.magnitude * jumpHeightInMeters);
-		private Vector3 GroundDetectorPosition => (collider.bounds.center) - Vector3.up * (collider.bounds.extents.y + (groundDetectionWidth / 2.0f)) + groundDetectionPositionOffset;
+		private Vector3 GroundDetectorPosition => collider.bounds.center - Vector3.up * (collider.bounds.extents.y + (groundDetectionWidth / 2.0f)) + groundDetectionPositionOffset;
 		private Vector3 GroundDetectorSize => new Vector3(collider.bounds.size.x, groundDetectionWidth, collider.bounds.size.z) + groundDetectionSizeOffset;
 
 
 		private bool jumpInput;
 		private Vector3 directionalInput;
+		private float finalSpeed;
 
 
 		private float lastKnownYPositionBeforeJump;
-		private bool isGrounded;
+		public bool IsGrounded { get; protected set; }
 		private Collider[] groundCheckAlloc;
 
 		private Rigidbody body;
 		private InputService inputService;
 		private Collider collider;
 		private Camera mainCamera;
+		[SerializeField] private Animancer.FSM.StateMachine<PlayerState> stateMachine;
+
+		private PlayerState idle, move, crouch, jump, sprint, dodgeroll, fall;
+
 		private void Awake()
 		{
+			idle = new IdleState(this);
+			move = new MoveState(this);
+			crouch = new CrouchState(this);
+			jump = new JumpState(this);
+			sprint = new SprintState(this);
+			dodgeroll = new DodgerollState(this);
+			fall = new FallingState(this);
+
+			stateMachine = new Animancer.FSM.StateMachine<PlayerState>(idle);
 			groundCheckAlloc = new Collider[10];
 
 			body = GetComponent<Rigidbody>();
@@ -54,41 +69,47 @@ namespace lota.gameplay
 
 			Cursor.visible = false;
 			Cursor.lockState = CursorLockMode.Locked;
+
+
+
 		}
 		private void Update()
 		{
-			directionalInput = LocalizedInputToCameraLook(inputService.GetActionAxis(InputActionID.Player_Move).ToVector3XZ());
-			jumpInput = inputService.IsActionHeld(InputActionID.Player_Jump);
+
+			if (inputService.IsActionHeld(InputActionID.Player_Jump))
+			{
+				stateMachine.TrySetState(jump);
+			}
+			else if (inputService.GetActionAxis(InputActionID.Player_Move).magnitude > 0.0f)
+			{
+				var finalState = inputService.IsActionHeld(InputActionID.Player_Sprint) ?
+				inputService.IsActionHeld(InputActionID.Player_Crouch) ? dodgeroll : sprint : inputService.IsActionHeld(InputActionID.Player_Crouch) ? crouch : move;
+				stateMachine.TrySetState(finalState);
+			}
+			else if (body.linearVelocity.y < 0.0f && !IsGrounded)
+			{
+				stateMachine.TrySetState(fall);
+			}
+			else if (stateMachine.CurrentState.GetType() != typeof(IdleState) && IsGrounded)
+			{
+				stateMachine.TrySetState(idle);
+			}
+
+
 		}
+
+
 		private void FixedUpdate()
 		{
-			HandleMovement();
-			HandleJump();
+			stateMachine.CurrentState.OnFixedUpdate();
 			HandleGroundCheck();
 		}
 
-		private void HandleMovement()
-		{
-			var newLinearVelocity = directionalInput * movementSpeed;
-			var targetLinearVelocity = new Vector3(newLinearVelocity.x, body.linearVelocity.y, newLinearVelocity.z);
-			var oldLinearVelicity = body.linearVelocity;
-			body.linearVelocity = Vector3.Lerp(oldLinearVelicity, targetLinearVelocity, accelerationSpeed);
-		}
 
-		private void HandleJump()
-		{
-			if (isGrounded && jumpInput && body.linearVelocity.y < 0.5f)
-			{
-				lastKnownYPositionBeforeJump = collider.bounds.center.y;
-				var targetLinearVelocity = -Physics.gravity.normalized * JumpVelocity;
-				body.linearVelocity += targetLinearVelocity;
-				isGrounded = false;
-			}
-		}
 
-		private Vector3 LocalizedInputToCameraLook(Vector3 rawInput)
+		public static Vector3 LocalizedInputToCameraLook(PlayerController player, Vector3 rawInput)
 		{
-			var result = mainCamera.transform.right * rawInput.x + mainCamera.transform.forward * rawInput.z;
+			var result = player.mainCamera.transform.right * rawInput.x + player.mainCamera.transform.forward * rawInput.z;
 			result.y = 0;
 			return result.normalized;
 		}
@@ -96,12 +117,7 @@ namespace lota.gameplay
 		private void HandleGroundCheck()
 		{
 			var result = Physics.OverlapBoxNonAlloc(GroundDetectorPosition, GroundDetectorSize, groundCheckAlloc, transform.rotation, groundDetectionMask);
-			isGrounded = result > 0;
-
-			for (int i = 0; i < result; ++i)
-			{
-				Debug.Log(groundCheckAlloc[i].name);
-			}
+			IsGrounded = result > 0;
 		}
 
 		private void OnDrawGizmos()
@@ -111,7 +127,7 @@ namespace lota.gameplay
 
 
 
-			Gizmos.color = isGrounded ? Color.green : Color.red;
+			Gizmos.color = IsGrounded ? Color.green : Color.red;
 			Gizmos.DrawCube(GroundDetectorPosition, GroundDetectorSize);
 			Gizmos.DrawSphere(GroundDetectorPosition, 0.15f);
 

@@ -96,23 +96,13 @@ namespace lota.systemic
 			var key = (int)actionID;
 			var result = keybindDatabase[key].ReadValue<float>() > 0 && keybindDatabase[key].triggered;
 
-			if (result)
-			{
-				Debug.Log(keybindDatabase[key].name);
-			}
-
 			return result;
 		}
-		
+
 		public bool IsActionHeld(InputActionID actionID)
 		{
 			var key = (int)actionID;
 			var result = keybindDatabase[key].ReadValue<float>() > 0;
-
-			if (result)
-			{
-				Debug.Log(keybindDatabase[key].name);
-			}
 
 			return result;
 		}
@@ -131,6 +121,11 @@ namespace lota.systemic
 			mapDatabase[oldMap].Disable();
 			mapDatabase[currentMap].Enable();
 
+		}
+
+		internal bool IsAxisActionPressed(InputActionID player_Move)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }
