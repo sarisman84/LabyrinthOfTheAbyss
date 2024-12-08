@@ -82,3 +82,5 @@ fmod_editor.log
 Documentation/.obsidian/workspace.json
 Documentation/.obsidian/hotkeys.json
 Documentation/.obsidian/appearance.json
+
+*.blend1
