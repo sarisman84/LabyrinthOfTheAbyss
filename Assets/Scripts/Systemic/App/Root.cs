@@ -26,12 +26,6 @@ namespace lota.systemic
 			interactableManager.Update();
 		}
 
-
-		void OnDrawGizmos()
-		{
-			interactableManager ??= ServiceLocator<InteractableManager>.Service;
-			interactableManager.OnDrawGizmos();
-		}
 	}
 }
 

@@ -14,7 +14,7 @@ namespace lota.gameplay
 
             public override void OnEnterState()
             {
-                Debug.Log("Dodgerolled!");
+                //Debug.Log("Dodgerolled!");
             }
         }
 

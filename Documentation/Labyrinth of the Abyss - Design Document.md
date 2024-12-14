@@ -285,7 +285,7 @@ UI will be stylized to match the game’s overall theme. It will be simplistic e
 	- Keyboard: WASD
 	- Gamepad: Right Stick
 - Sprint:
-	- Keyboard: Sprint
+	- Keyboard: Left Shift
 	- Gamepad: Right Shoulder
 - Camera Look:
 	- Mouse: Move

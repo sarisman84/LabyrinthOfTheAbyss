@@ -17,7 +17,7 @@ namespace lota.gameplay
             public override bool CanEnterState => player.IsGrounded;
             public override void OnEnterState()
             {
-                Debug.Log("Sprinting");
+                //Debug.Log("Sprinting");
             }
             public override void OnFixedUpdate()
             {

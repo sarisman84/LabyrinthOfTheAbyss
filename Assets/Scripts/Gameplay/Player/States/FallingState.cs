@@ -14,7 +14,7 @@ namespace lota.gameplay
 
             public override void OnEnterState()
             {
-                Debug.Log("Falling");
+                //Debug.Log("Falling");
             }
 
             public override bool CanEnterState => player.body.linearVelocity.y < 0.0f && !player.IsGrounded;

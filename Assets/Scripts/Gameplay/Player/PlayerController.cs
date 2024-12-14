@@ -4,6 +4,7 @@ using Spyro;
 using UnityEngine;
 using lota.generated.input;
 using System;
+using lota.gameplay.interactions;
 
 namespace lota.gameplay
 {
@@ -25,8 +26,8 @@ namespace lota.gameplay
 		[SerializeField] private float accelerationSpeed = 0.8f;
 
 		private float JumpVelocity => Mathf.Sqrt(2 * Physics.gravity.magnitude * jumpHeightInMeters);
-		private Vector3 GroundDetectorPosition => collider.bounds.center - Vector3.up * (collider.bounds.extents.y + (groundDetectionWidth / 2.0f)) + groundDetectionPositionOffset;
-		private Vector3 GroundDetectorSize => new Vector3(collider.bounds.size.x, groundDetectionWidth, collider.bounds.size.z) + groundDetectionSizeOffset;
+		private Vector3 GroundDetectorPosition => bodyCollider.bounds.center - Vector3.up * (bodyCollider.bounds.extents.y + (groundDetectionWidth / 2.0f)) + groundDetectionPositionOffset;
+		private Vector3 GroundDetectorSize => new Vector3(bodyCollider.bounds.size.x, groundDetectionWidth, bodyCollider.bounds.size.z) + groundDetectionSizeOffset;
 
 
 		private bool jumpInput;
@@ -40,8 +41,10 @@ namespace lota.gameplay
 
 		private Rigidbody body;
 		private InputService inputService;
-		private Collider collider;
+		private Collider bodyCollider;
 		private Camera mainCamera;
+		private InteractionController interactionController;
+
 		[SerializeField] private Animancer.FSM.StateMachine<PlayerState> stateMachine;
 
 		private PlayerState idle, move, crouch, jump, sprint, dodgeroll, fall;
@@ -60,7 +63,7 @@ namespace lota.gameplay
 			groundCheckAlloc = new Collider[10];
 
 			body = GetComponent<Rigidbody>();
-			collider = GetComponent<Collider>();
+			bodyCollider = GetComponent<Collider>();
 
 			body.freezeRotation = true;
 
@@ -69,9 +72,6 @@ namespace lota.gameplay
 
 			Cursor.visible = false;
 			Cursor.lockState = CursorLockMode.Locked;
-
-
-
 		}
 		private void Update()
 		{
@@ -123,7 +123,7 @@ namespace lota.gameplay
 		private void OnDrawGizmos()
 		{
 
-			collider ??= GetComponent<Collider>();
+			bodyCollider = bodyCollider ? bodyCollider : GetComponent<Collider>();
 
 
 
@@ -132,11 +132,11 @@ namespace lota.gameplay
 			Gizmos.DrawSphere(GroundDetectorPosition, 0.15f);
 
 			Gizmos.color = Color.magenta;
-			Gizmos.DrawWireCube(collider.bounds.center, collider.bounds.size);
+			Gizmos.DrawWireCube(bodyCollider.bounds.center, bodyCollider.bounds.size);
 
 			Gizmos.color = Color.cyan;
-			Vector3 aPos = collider.bounds.center;
-			Vector3 bPos = new Vector3(collider.bounds.center.x, lastKnownYPositionBeforeJump, collider.bounds.center.z) + Vector3.up * jumpHeightInMeters;
+			Vector3 aPos = bodyCollider.bounds.center;
+			Vector3 bPos = new Vector3(bodyCollider.bounds.center.x, lastKnownYPositionBeforeJump, bodyCollider.bounds.center.z) + Vector3.up * jumpHeightInMeters;
 			Gizmos.DrawSphere(aPos, 0.05f);
 			Gizmos.DrawSphere(bPos, 0.05f);
 			Gizmos.DrawLine(aPos, bPos);

@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 297844337}
   - component: {fileID: 297844336}
   - component: {fileID: 297844335}
-  - component: {fileID: 297844334}
+  - component: {fileID: 297844338}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -186,34 +186,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 517034617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &297844334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297844332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8841f96fb716975408a6141da133f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onInteractEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2045910971}
-        m_TargetAssemblyTypeName: lota.systemic.debug.GameDebugger, Assembly-CSharp
-        m_MethodName: PrintMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: This is a test
-          m_BoolArgument: 0
-        m_CallState: 2
-  detectionRadius: 3
 --- !u!65 &297844335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -288,6 +260,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297844332}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &297844338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297844332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6855400b46cbd9b4fb283d7ceaa195aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactMessage: This is a test (1)
+  interactHoverEnterMessage: This is a test enter (1)
+  interactHoverExitMessage: This is a test exit (1)
+  detectionRadius: 5
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,7 +660,7 @@ GameObject:
   - component: {fileID: 983644506}
   - component: {fileID: 983644505}
   - component: {fileID: 983644504}
-  - component: {fileID: 983644503}
+  - component: {fileID: 983644507}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -695,34 +683,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 517034617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &983644503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983644501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8841f96fb716975408a6141da133f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onInteractEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2045910971}
-        m_TargetAssemblyTypeName: lota.systemic.debug.GameDebugger, Assembly-CSharp
-        m_MethodName: PrintMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: This is a test 3
-          m_BoolArgument: 0
-        m_CallState: 2
-  detectionRadius: 1
 --- !u!65 &983644504
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -797,6 +757,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983644501}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &983644507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983644501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6855400b46cbd9b4fb283d7ceaa195aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactMessage: This is a test 3
+  interactHoverEnterMessage: This is a test enter (3)
+  interactHoverExitMessage: This is a test exit (3)
+  detectionRadius: 15
 --- !u!1 &1860128307
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +785,7 @@ GameObject:
   - component: {fileID: 1860128312}
   - component: {fileID: 1860128311}
   - component: {fileID: 1860128310}
-  - component: {fileID: 1860128309}
+  - component: {fileID: 1860128313}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -832,34 +808,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 517034617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1860128309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860128307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8841f96fb716975408a6141da133f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onInteractEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2045910971}
-        m_TargetAssemblyTypeName: lota.systemic.debug.GameDebugger, Assembly-CSharp
-        m_MethodName: PrintMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: This is a test 2
-          m_BoolArgument: 0
-        m_CallState: 2
-  detectionRadius: 2
 --- !u!65 &1860128310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -934,6 +882,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860128307}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1860128313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860128307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6855400b46cbd9b4fb283d7ceaa195aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactMessage: This is a test 2
+  interactHoverEnterMessage: This is a test enter (2)
+  interactHoverExitMessage: This is a test exit (2)
+  detectionRadius: 10
 --- !u!1 &2045910968
 GameObject:
   m_ObjectHideFlags: 0

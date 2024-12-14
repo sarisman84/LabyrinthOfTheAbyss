@@ -15,7 +15,7 @@ namespace lota.gameplay
 
             public override void OnEnterState()
             {
-                Debug.Log("Idling");
+                //Debug.Log("Idling");
             }
         }
 

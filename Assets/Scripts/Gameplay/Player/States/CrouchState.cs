@@ -17,7 +17,7 @@ namespace lota.gameplay
 
             public override void OnEnterState()
             {
-                Debug.Log("Crouching");
+                //Debug.Log("Crouching");
             }
 
             public override bool CanEnterState => player.IsGrounded;
