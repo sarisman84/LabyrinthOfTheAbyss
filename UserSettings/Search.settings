@@ -2,7 +2,7 @@ trackSelection = true
 refreshSearchWindowsInPlayMode = false
 pickerAdvancedUI = false
 fetchPreview = true
-defaultFlags = 0
+defaultFlags = 264
 keepOpen = true
 queryFolder = "Assets"
 onBoardingDoNotAskAgain = true
@@ -72,6 +72,25 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"p: keyboard t:Sprite p:outline"
+	"p: ext:png"
+	"p: ext:png dir=\"keyboard & mouse\""
+	"p: ext:png dir=keyboar"
+	"p: ext:png dir=\"\""
+	"p: ext:png dir=\"folder name\""
+	"p: ext:png name=keyboard"
+	"p: ext:png name=\"\""
+	"p: ext:png ref=<$object:none,UnityEngine.Object$>"
+	"p: ext:png \"keyboar"
+	"p: name=keyboard ext:png"
+	"p: name=\"keyboard\""
+	"p: name=\"\""
+	"p: keyboard ext:png \"outline\""
+	"p: keyboard ext:png"
+	"p: keyboard ext:png t:Outline"
+	"p: keyboard"
+	"p: keyboard t:Sprite"
+	"p: keyboard t:Sprite name=\"\""
 	"Interact"
 ]
 searchItemFavorites = [

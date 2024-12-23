@@ -272,10 +272,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6855400b46cbd9b4fb283d7ceaa195aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactMessage: This is a test (1)
-  interactHoverEnterMessage: This is a test enter (1)
-  interactHoverExitMessage: This is a test exit (1)
-  detectionRadius: 5
+  triggerOnce: 0
+  interactMessage: This is an interaction test
+  detectionBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 1, y: 1, z: 1}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,13 +767,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 983644501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6855400b46cbd9b4fb283d7ceaa195aa, type: 3}
+  m_Script: {fileID: 11500000, guid: 890ccece1dc3280429d65e35a5f9574f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactMessage: This is a test 3
-  interactHoverEnterMessage: This is a test enter (3)
-  interactHoverExitMessage: This is a test exit (3)
-  detectionRadius: 15
+  triggerOnce: 0
+  detectionRadius: 3
 --- !u!1 &1860128307
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,10 +893,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6855400b46cbd9b4fb283d7ceaa195aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactMessage: This is a test 2
-  interactHoverEnterMessage: This is a test enter (2)
-  interactHoverExitMessage: This is a test exit (2)
-  detectionRadius: 10
+  triggerOnce: 1
+  interactMessage: This interaction triggers once!
+  detectionBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 1, y: 1, z: 1}
 --- !u!1 &2045910968
 GameObject:
   m_ObjectHideFlags: 0
