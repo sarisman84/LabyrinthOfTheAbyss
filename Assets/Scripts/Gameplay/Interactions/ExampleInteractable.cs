@@ -12,7 +12,7 @@ namespace lota.gameplay.interactions
 
 		public Bounds detectionBounds;
 
-		public override string UIDisplayMessage => $"Press <input:{InputService.IDToString(InputActionID.Player_Interact)}> to interact {gameObject.name}!";
+		public override string UIDisplayMessage => $"Press <input:{InputService.IDToString(InputActionID.Player_Jump)}> to interact {gameObject.name}!";
 
 		protected override DetectionBase Detection => new BoundsDetector(detectionBounds.center, detectionBounds.size);
 

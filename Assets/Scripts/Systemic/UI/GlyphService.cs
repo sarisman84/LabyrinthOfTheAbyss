@@ -65,7 +65,7 @@ namespace lota.systemic.ui
 
 		public int GetGlyphIndexByKey(string inputKey)
 		{
-			var key = inputKey.ToLower();
+			var key = ParseInput(inputKey);
 			foreach (var (_, keys) in glyphRegistry)
 			{
 				if (keys.ContainsKey(key))
@@ -84,6 +84,28 @@ namespace lota.systemic.ui
 		public string ToSpriteTag(int glyphId)
 		{
 			return $"<sprite=\"{InputIconsPath + InputAtlas}\" name=\"{Characters[glyphId].name}\">";
+		}
+
+
+		private string ParseInput(string inputKey)
+		{
+			var key = inputKey.ToLower();
+			if (key.Contains("control"))
+			{
+				return "ctrl";
+			}
+
+			if (key.Contains("shift"))
+			{
+				return "shift";
+			}
+
+			if (key.Contains("button"))
+			{
+				return key.Replace("button", "");
+			}
+
+			return key;
 		}
 	}
 }
