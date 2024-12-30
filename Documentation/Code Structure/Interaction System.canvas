@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"bcac1df3596193c1","type":"text","text":"# Interaction Controller\n\nThe interaction controller is responsible for making sure the user input can interface with any interactable within the world.","x":-332,"y":-338,"width":292,"height":238},
+		{"id":"d420ddf5ef664903","type":"text","text":"# Interactable\n\nThe interactable component is responsible for executing an interaction event whenever an interaction controller interfaces with it.","x":300,"y":-338,"width":260,"height":238},
+		{"id":"e1f86a0c4a59bbf9","x":-940,"y":-428,"width":440,"height":419,"type":"file","file":"Code Structure/Input Manager.md"}
+	],
+	"edges":[
+		{"id":"d8e3a79c7942c386","fromNode":"bcac1df3596193c1","fromSide":"right","toNode":"d420ddf5ef664903","toSide":"left"},
+		{"id":"953cc002540a190f","fromNode":"e1f86a0c4a59bbf9","fromSide":"right","toNode":"bcac1df3596193c1","toSide":"left"}
+	]
+}

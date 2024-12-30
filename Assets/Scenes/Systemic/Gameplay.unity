@@ -127,6 +127,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2279790017830647025, guid: 4d113d51242311449ab9e4286bb37e9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.710942
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279790017830647025, guid: 4d113d51242311449ab9e4286bb37e9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.868204
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279790017830647025, guid: 4d113d51242311449ab9e4286bb37e9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.34286302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279790017830647025, guid: 4d113d51242311449ab9e4286bb37e9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7207163
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279790017830647025, guid: 4d113d51242311449ab9e4286bb37e9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.077973075
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279790017830647025, guid: 4d113d51242311449ab9e4286bb37e9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.68483484
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279790017830647025, guid: 4d113d51242311449ab9e4286bb37e9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.07409112
+      objectReference: {fileID: 0}
     - target: {fileID: 3308153299369318956, guid: 4d113d51242311449ab9e4286bb37e9d, type: 3}
       propertyPath: m_Name
       value: Player
